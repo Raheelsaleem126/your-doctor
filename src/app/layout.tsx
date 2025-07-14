@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme-color="skin-2">
+    <html lang="en" data-theme-color="skin-indigo">
       <head>
         <meta property="og:title" content="ClinicMaster – Health & Medical Next Template | DexignZone" />        
         <meta property="og:image" content="https://clinicmaster.dexignzone.com/next/social-image.png" />

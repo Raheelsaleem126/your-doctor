@@ -30,7 +30,7 @@ function Footer() {
                                     <div className="footer-logo logo-white">
                                         <Link href="/"><Image src={IMAGES.logowhite} alt="logo" /></Link>
                                     </div>
-                                    <p><span className="text-white">ClinicMaster</span> Ipsum Dolor Sit Amet, Consectetuer Adipiscing Elit, Sed Diam Nonummy Nibh.</p>
+                                    <p><span className="text-white">Your Doctor</span> provides comprehensive healthcare services with a focus on skin concerns, musculoskeletal issues, diabetes care, weight management, and sexual health. Our experienced team is dedicated to your well-being.</p>
                                     <div className="widget-rating2">
                                         <Image src={IMAGES.google} alt="google" />
                                         <div className="clearfix">
@@ -71,8 +71,8 @@ function Footer() {
                         <div className="fm-inner">
                             <div className="row align-items-center g-lg-5 g-4">
                                 <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
-                                    <h2 className="title">Important Updates Waiting for you</h2>
-                                    <p>Get our latest and best contents right into your inbox</p>
+                                    <h2 className="title">Stay Updated with Health Tips</h2>
+                                    <p>Get the latest health advice, appointment reminders, and wellness tips delivered to your inbox</p>
                                 </div>
                                 <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">
                                     <form className="dzSubscribe style-1"  ref={form} onSubmit={handleSubmit}>
@@ -101,15 +101,14 @@ function Footer() {
                         <div className="fb-inner">
                             <div className="row">
                                 <div className="col-lg-6 col-md-12 text-start">
-                                    <p className="copyright-text">© <span className="current-year">2025</span> <Link href="https://themeforest.net/user/dexignzone" target="_blank">DexignZone</Link> Theme. All Rights Reserved.</p>
+                                    <p className="copyright-text">© <span className="current-year">2025</span> Your Doctor. All Rights Reserved.</p>
                                 </div>
                                 <div className="col-lg-6 col-md-12 text-end">
                                     <ul className="nav-inline">
-                                        <li> <Link href="https://www.linkedin.com/showcase/dexignzone" target="_blank"><i className="fa-brands fa-linkedin" /> </Link> </li>
-                                        <li> <Link href="https://www.instagram.com/dexignzone" target="_blank"><i className="fa-brands fa-instagram" /> </Link> </li>
-                                        <li> <Link href="https://www.facebook.com/dexignzone" target="_blank"><i className="fa-brands fa-facebook-f" /> </Link> </li>
-                                        <li> <Link href="https://www.x.com/dexignzone" target="_blank"><i className="fa-brands fa-x-twitter" /> </Link> </li>
-                                        <li> <Link href="https://www.linkedin.com/@dexignzone" target="_blank"><i className="fa-brands fa-youtube" /> </Link> </li>
+                                        <li> <Link href="#" target="_blank"><i className="fa-brands fa-linkedin" /> </Link> </li>
+                                        <li> <Link href="#" target="_blank"><i className="fa-brands fa-instagram" /> </Link> </li>
+                                        <li> <Link href="#" target="_blank"><i className="fa-brands fa-facebook-f" /> </Link> </li>
+                                        <li> <Link href="#" target="_blank"><i className="fa-brands fa-x-twitter" /> </Link> </li>
                                     </ul>
                                 </div>
                             </div>

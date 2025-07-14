@@ -21,59 +21,42 @@ interface MenuItem {
 export const menudata : MenuItem[] =[
     {
         title: "Home",
-        classChange: "has-mega-menu",
-
-        content: [
-            { title: "01 Skin Care", to: "https://next-clinicmaster-skincare.vercel.app/", image: IMAGES.demohome3, },
-            { title: "02 Dentist", to: "/", image: IMAGES.demohome2, },
-            { title: "03 Medical", to: "https://next-clinicmaster-medical.vercel.app/", image: IMAGES.demohome1, },
-        ],
+        to: "/",
     },
+    // {
+    //     title: "Pages",
+    //     classChange: "sub-menu-down",
+        
+    //     content: [
+    //         { title: "About Us", to: "/about-us" },
+    //         { title: "Appointment", to: "/appointment" },
+    //         { title: "Pricing Table", to: "/pricing-table" },
+    //         { title: "Faq's", to: "/faqs" },
+    //     ],
+    // },
     {
-        title: "Pages",
+        title: "Our Doctors",
         classChange: "sub-menu-down",
         
         content: [
-            { title: "About Us", to: "/about-us" },
-            { title: "About Us 2", to: "/about-us-2" },
-            { title: "Appointment", to: "/appointment" },
-            { title: "Pricing Table", to: "/pricing-table" },
-            { title: "Testimonial", to: "/testimonial" },
-            { title: "Faq's", to: "/faqs" },
-            { title: "Error 404", to: "/error-404" },
-        ],
-    },
-    {
-        title: "Team",
-        classChange: "sub-menu-down",
-        
-        content: [
-            // { title: "Team", to: "/team" },
             { title: "Dr Huma Sheikh", to: "/dr-huma" },
             { title: "Dr Samira Masoud", to: "/dr-samira" },
         ],
     },
+    // {
+    //     title: "Services",
+    //     classChange: "sub-menu-down",
+        
+    //     content: [
+    //         // { title: "All Services", to: "/services" },
+    //         { title: "Comprehensive Services", to: "/services-2" },
+    //     ],
+    // },
     {
         title: "Services",
-        classChange: "sub-menu-down",
-        
-        content: [
-            { title: "Services", to: "/services" },
-            { title: "Services 2", to: "/services-2" },
-            { title: "Service Detail", to: "/service-detail" },
-            { title: "Service Detail 2", to: "/service-detail-2" },
-        ],
+        to: "/services-2",
     },
-    {
-        title: "Blogs",
-        classChange: "sub-menu-down",
-        
-        content: [
-            { title: "Blog Grid", to: "/blog-grid" },
-            { title: "Blog List Sidebar", to: "/blog-list-sidebar" },
-            { title: "Blog Details", to: "/blog-details" },
-        ],
-    },
+
     { 
         title: "Contact Us", 
         to: "/contact-us" 
@@ -231,7 +214,7 @@ export const pricingplandata = [
 
 export const custompricingplandata = [
     {
-        vertical: 'PROFESSIONAL', image: IMAGES.pricetable1, title: 'Skin Concerns', month: '$49', year: '$550',
+        vertical: 'PROFESSIONAL', image: IMAGES.drhuma, title: 'Skin Concerns', month: '$49', year: '$550',
         feature: <ul className="pricingtable-features">
             <li>Acne and adult acne treatment</li>
             <li>Rashes, eczema, dermatitis care</li>
@@ -241,7 +224,7 @@ export const custompricingplandata = [
         </ul>,
     },
     {
-        vertical: 'FAMILY PACK', image: IMAGES.pricetable2, title: 'MSK Issues', month: '$99', year: '$999',
+        vertical: 'FAMILY PACK', image: IMAGES.drhuma, title: 'MSK Issues', month: '$99', year: '$999',
         feature: <ul className="pricingtable-features">
             <li>Back, neck & joint pain</li>
             <li>Sports injuries & sprains</li>
@@ -252,7 +235,7 @@ export const custompricingplandata = [
         </ul>,
     },
     {
-        vertical: 'PROFESSIONAL', image: IMAGES.pricetable3, title: 'Diabetes Care', month: '$49', year: '$1049',
+        vertical: 'PROFESSIONAL', image: IMAGES.drhuma, title: 'Diabetes Care', month: '$49', year: '$1049',
         feature: <ul className="pricingtable-features">
             <li>Type 2 diabetes screening</li>
             <li>Blood sugar & HbA1c testing</li>
@@ -262,7 +245,7 @@ export const custompricingplandata = [
         </ul>,
     },
     {
-        vertical: 'FAMILY PACK', image: IMAGES.pricetable4, title: 'Weight Management', month: '$99', year: '$1099',
+        vertical: 'FAMILY PACK', image: IMAGES.drhuma, title: 'Weight Management', month: '$99', year: '$1099',
         feature: <ul className="pricingtable-features">
             <li>Medical assessment of weight-related concerns</li>
             <li>Hormonal/metabolic screening</li>
@@ -272,7 +255,7 @@ export const custompricingplandata = [
         </ul>,
     },
     {
-        vertical: 'PROFESSIONAL', image: IMAGES.pricetable3, title: 'Birth Control & Sexual Health', month: '$49', year: '$1049',
+        vertical: 'PROFESSIONAL', image: IMAGES.drhuma, title: 'Birth Control & Sexual Health', month: '$49', year: '$1049',
         feature: <ul className="pricingtable-features">
             <li>Contraception advice & prescriptions</li>
             <li>Coil/implant procedures</li>
@@ -333,19 +316,15 @@ export const service2data = [
 // footer 
 export const footerdata = [
     {
-        title: 'Our Services', span1: 'Emergency Care', span2: 'Operation Theater', span3: 'Medical Checkup', span4: 'Diagnostic Center', span5: 'Outdoor Checkup',
-        link1: '/service-detail', link2: '/service-detail', link3: '/service-detail', link4: '/service-detail', link5: '/service-detail',
+        title: 'Our Services', span1: 'Skin Concerns', span2: 'MSK Issues', span3: 'Diabetes Care', span4: 'Weight Management', span5: 'Birth Control',
+        link1: '/services-2', link2: '/services-2', link3: '/services-2', link4: '/services-2', link5: '/services-2',
     },
     {
-        title: 'Useful Links', span1: 'Privacy Policy', span2: 'Terms & Conditions', span3: 'Contact Us', span4: 'Latest News', span5: 'Our Sitemap',
-        link1: '#', link2: '#', link3: '/contact-us', link4: '/blog-grid', link5: '#',
+        title: 'Quick Links', span1: 'About Us', span2: 'Our Team', span3: 'Appointments', span4: 'Contact Us', span5: 'FAQs',
+        link1: '/about-us', link2: '/team', link3: '/appointment', link4: '/contact-us', link5: '/faqs',
     },
     {
-        title: 'Our Stores', span1: 'New York', span2: 'London SF', span3: 'Edinburgh', span4: 'Los Angeles', span5: 'Las Vegas',
+        title: 'Legal', span1: 'Privacy Policy', span2: 'Terms & Conditions', span3: 'Patient Rights', span4: 'Insurance Info', span5: 'HIPAA Compliance',
         link1: '#', link2: '#', link3: '#', link4: '#', link5: '#',
-    },
-    {
-        title: 'Quick Links', span1: 'About Us', span2: 'Our Services', span3: 'Our Team', span4: 'Appointments', span5: 'Contact Us',
-        link1: '/about-us', link2: '/services', link3: '/team', link4: '/appointment', link5: '/contact-us',
     },
 ]
