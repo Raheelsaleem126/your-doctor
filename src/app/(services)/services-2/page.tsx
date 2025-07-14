@@ -7,6 +7,7 @@ import CompareSwiper from "@/component/CompareSwiper";
 import Faqdata from "@/component/Faqdata";
 import Image from "next/image";
 import { IMAGES } from "@/constant/theme";
+import CustomPricing from "@/component/CustomPricing";
 
 const services = [
   {
@@ -22,7 +23,7 @@ const services = [
       "Prescription-strength treatments",
     ],
     cta: { label: "Book a Skin Consultation", href: "/appointment" },
-    image: IMAGES.service1,
+    image: IMAGES.skinconcern,
     right: false,
   },
   {
@@ -35,11 +36,12 @@ const services = [
       "Sports injuries & sprains",
       "Arthritis and inflammation",
       "Referrals to physiotherapy or imaging",
-      "Minor procedures (e.g., joint injections)*",
+      "Minor procedures (e.g., joint injections)",
+      "Available depending on clinic equipment.",
     ],
-    note: "*Available depending on clinic equipment.",
+    // note: "*Available depending on clinic equipment.",
     cta: { label: "Book MSK Appointment", href: "/appointment" },
-    image: IMAGES.service2,
+    image: IMAGES.musculoskeletal,
     right: true,
   },
   {
@@ -55,7 +57,7 @@ const services = [
       "Regular follow-up appointments",
     ],
     cta: { label: "Book a Diabetes Review", href: "/appointment" },
-    image: IMAGES.service3,
+    image: IMAGES.diabetescare,
     right: false,
   },
   {
@@ -71,7 +73,7 @@ const services = [
       "Ongoing monitoring and motivation",
     ],
     cta: { label: "Start Your Weight Health Plan", href: "/appointment" },
-    image: IMAGES.service4,
+    image: IMAGES.obesity,
     right: true,
   },
   {
@@ -85,10 +87,11 @@ const services = [
       "Emergency contraception",
       "Sexual health screening",
       "Fertility planning support",
+      "Some procedures may require in-person clinic availability.",
     ],
-    note: "*Some procedures may require in-person clinic availability.",
+    // note: "*Some procedures may require in-person clinic availability.",
     cta: { label: "Book a Contraception Appointment", href: "/appointment" },
-    image: IMAGES.pricetable1,
+    image: IMAGES.birthcontrol,
     right: false,
   },
 ];
@@ -131,14 +134,14 @@ function Services2() {
             ))}
           </div>
         </section>
-        <CompareSwiper />
+        {/* <CompareSwiper /> */}
         <section className="content-inner">
           <div className="container">
             <div className="section-head style-2 m-b30 text-center wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
               <h2 className="title">Flexible Pricing Plans</h2>
               <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
             </div>
-            <Faqdata />
+            <CustomPricing />
           </div>
         </section>
         <WantApponiment />

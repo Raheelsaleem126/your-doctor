@@ -107,6 +107,12 @@ import bg2png from '../../public/assets/images/background/bg2.png'
 import drhuma from '../../public/assets/images/about/dr-huma.png'
 import drsamira from '../../public/assets/images/about/dr-samira.png'
 import meettheteam from '../../public/assets/images/about/meet-the-team.png'
+import birthcontrol from '../../public/assets/images/about/birth-control.jpg'
+import skinconcern from '../../public/assets/images/about/skin-concerns.jpg'
+import obesity from '../../public/assets/images/about/obesity.jpg'
+import musculoskeletal from '../../public/assets/images/about/musculoskeletal.jpg'
+import diabetescare from '../../public/assets/images/about/diabetes-care.jpg'
+import servicebanner from '../../public/assets/images/about/services.png'
 
 
 export const IMAGES : any = {
@@ -163,10 +169,10 @@ export const IMAGES : any = {
     teamlarge5: teamlarge5,
     beforecomapare1: beforecomapare1,
     aftercomapare1: aftercomapare1,
-    service1: service1,
-    service2: service2,
-    service3: service3,
-    service4: service4,
+    // service1: service1,
+    // service2: service2,
+    // service3: service3,
+    // service4: service4,
     bgcircle: bgcircle,
     blogsmall1: blogsmall1,
     blogsmall2: blogsmall2,
@@ -219,6 +225,12 @@ export const IMAGES : any = {
     drhuma: drhuma,
     drsamira: drsamira,
     meettheteam: meettheteam,
+    birthcontrol: birthcontrol,
+    diabetescare: diabetescare,
+    musculoskeletal: musculoskeletal,
+    skinconcern: skinconcern,
+    obesity: obesity,
+    servicebanner: servicebanner,
 }
 export const SVGICONS = {
     smile: `<svg width="207" height="44" viewBox="0 0 207 44" fill="none" xmlns="http://www.w3.org/2000/svg">

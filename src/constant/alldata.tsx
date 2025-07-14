@@ -228,6 +228,61 @@ export const pricingplandata = [
         </ul>,
     },
 ]
+
+export const custompricingplandata = [
+    {
+        vertical: 'PROFESSIONAL', image: IMAGES.pricetable1, title: 'Skin Concerns', month: '$49', year: '$550',
+        feature: <ul className="pricingtable-features">
+            <li>Acne and adult acne treatment</li>
+            <li>Rashes, eczema, dermatitis care</li>
+            <li>Mole and lesion checks</li>
+            <li>Prescription-strength treatments</li>
+            <li>Psoriasis support</li>
+        </ul>,
+    },
+    {
+        vertical: 'FAMILY PACK', image: IMAGES.pricetable2, title: 'MSK Issues', month: '$99', year: '$999',
+        feature: <ul className="pricingtable-features">
+            <li>Back, neck & joint pain</li>
+            <li>Sports injuries & sprains</li>
+            <li>Arthritis and inflammation</li>
+            <li>Imaging & physio referrals</li>
+            <li>Joint injections (where available)</li>
+            <li>Available depending on clinic equipment.</li>
+        </ul>,
+    },
+    {
+        vertical: 'PROFESSIONAL', image: IMAGES.pricetable3, title: 'Diabetes Care', month: '$49', year: '$1049',
+        feature: <ul className="pricingtable-features">
+            <li>Type 2 diabetes screening</li>
+            <li>Blood sugar & HbA1c testing</li>
+            <li>Lifestyle & medication advice</li>
+            <li>Nutrition advice</li>
+            <li>Regular checkups</li>
+        </ul>,
+    },
+    {
+        vertical: 'FAMILY PACK', image: IMAGES.pricetable4, title: 'Weight Management', month: '$99', year: '$1099',
+        feature: <ul className="pricingtable-features">
+            <li>Medical assessment of weight-related concerns</li>
+            <li>Hormonal/metabolic screening</li>
+            <li>Lifestyle and nutrition coaching</li>
+            <li>Prescription weight-loss options (if appropriate)</li>
+            <li>Ongoing progress support</li>
+        </ul>,
+    },
+    {
+        vertical: 'PROFESSIONAL', image: IMAGES.pricetable3, title: 'Birth Control & Sexual Health', month: '$49', year: '$1049',
+        feature: <ul className="pricingtable-features">
+            <li>Contraception advice & prescriptions</li>
+            <li>Coil/implant procedures</li>
+            <li>Emergency contraception</li>
+            <li>Sexual health screening</li>
+            <li>Fertility planning support</li>
+            <li>Some procedures may require in-person clinic availability.</li>
+        </ul>,
+    },
+]
 // pages 
 // aboutus2 
 export const aboutus2data = [

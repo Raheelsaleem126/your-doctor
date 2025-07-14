@@ -7,6 +7,17 @@ interface titleProp{
 }
 
 function Pagebanner({title} : titleProp) {
+    const getBannerImage = (pageTitle: string) => {
+        switch (pageTitle) {
+            case 'Team Details':
+                return IMAGES.meettheteam;
+            case 'Our Services':
+                return IMAGES.servicebanner;
+            default:
+                return IMAGES.bnr1;
+        }
+    };
+
     return (
         <>
             <div className="dz-bnr-inr style-2 dz-bnr-inr-md">
@@ -23,7 +34,7 @@ function Pagebanner({title} : titleProp) {
                                 </nav>
                             </div>
                             <div className="bnr-media" data-bottom-top="transform: translateY(-100px)" data-top-bottom="transform: translateY(100px)">
-                                <Image src={title === 'Team Details' ? IMAGES.meettheteam : IMAGES.bnr1} alt="" className="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s" />
+                                <Image src={getBannerImage(title)} alt="" className="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s" />
                             </div>
                         </div>
                     </div>
