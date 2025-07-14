@@ -23,7 +23,7 @@ function Pagebanner({title} : titleProp) {
                                 </nav>
                             </div>
                             <div className="bnr-media" data-bottom-top="transform: translateY(-100px)" data-top-bottom="transform: translateY(100px)">
-                                <Image src={IMAGES.bnr1} alt="" className="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s" />
+                                <Image src={title === 'Team Details' ? IMAGES.meettheteam : IMAGES.bnr1} alt="" className="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s" />
                             </div>
                         </div>
                     </div>

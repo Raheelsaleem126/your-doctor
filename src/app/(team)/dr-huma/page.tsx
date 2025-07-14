@@ -8,7 +8,7 @@ import AppointmentData from "@/component/AppointmentData";
 import CountUp from "react-countup";
 import Image from "next/image";
 
-function TeamDetail() {
+function TeamDetail2() {
     return (
         <>
             <Header columnstand="header-transparent" />
@@ -22,7 +22,7 @@ function TeamDetail() {
                                     <div className="widget wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
                                         <div className="dz-team style-6">
                                             <div className="dz-media">
-                                                <Image src={IMAGES.about2} alt="/" />
+                                                <Image src={IMAGES.drhuma} alt="Dr Huma Sheikh" />
                                             </div>
                                             <ul className="dz-social">
                                                 <li><Link href="https://www.linkedin.com/showcase/dexignzone" target="_blank"><i className="fa-brands fa-linkedin" /></Link></li>
@@ -33,7 +33,7 @@ function TeamDetail() {
                                             </ul>
                                             <div className="item1">
                                                 <div className="info-widget style-10 move-3">
-                                                    <span className="content-text text-primary"><span className="counter"><CountUp end={20} duration={5} /></span>+</span>
+                                                    <span className="content-text text-primary"><span className="counter"><CountUp end={10} duration={5} /></span>+</span>
                                                     <h3 className="title m-b0">Years <br /> Experienced</h3>
                                                 </div>
                                             </div>
@@ -43,66 +43,58 @@ function TeamDetail() {
                             </div>
                             <div className="col-lg-6">
                                 <div className="section-head style-1 mb-30">
-                                    <h2 className="titlev fw-semibold m-b0 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">Dr. Nashid Martines</h2>
-                                    <p className="text-primary m-b20 fw-normal small wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">MBBS (Village Town), USA (Cardiac Surgery)</p>
-                                    <p className="fw-normal small wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.8s">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
-                                    <p className="fw-normal small wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.8s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                    <h2 className="titlev fw-semibold m-b0 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">Dr Huma Sheikh</h2>
+                                    <p className="text-primary m-b20 fw-normal small wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">MBBS | MRCGP | DFSRH | DRCOG | Diploma in Dermatology</p>
+                                    <p className="text-primary m-b20 fw-normal small wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">Private General Practitioner | Over 10 Years of NHS Experience</p>
+                                    <p className="fw-normal small wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.8s">Dr Huma Sheikh is a highly skilled and compassionate General Practitioner with over 10 years of experience in the NHS. Her clinical background is complemented by advanced qualifications in women's health, reproductive medicine, and dermatology, making her a versatile and trusted doctor for a wide range of health concerns.</p>
+                                    <p className="fw-normal small wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.8s">Known for her warm and approachable manner, Dr Sheikh builds lasting relationships with her patients through careful listening, clear communication, and evidence-based care. She believes in empowering individuals to take control of their health, tailoring every consultation to the unique needs and goals of the patient.</p>
                                 </div>
                                 <table className="table table-border-bottom m-b40 wow fadeInUp" data-wow-delay="1.0s" data-wow-duration="0.8s">
                                     <tbody>
                                         <tr>
                                             <th>Specialty</th>
-                                            <td>Orthodontist Surgeon Specialize</td>
+                                            <td>Private General Practitioner</td>
                                         </tr>
                                         <tr>
                                             <th>Degrees</th>
-                                            <td><Link href={"#"} scroll={false}>MBBS University of California</Link></td>
+                                            <td><Link href={"#"} scroll={false}>MBBS | MRCGP | DFSRH | DRCOG | Diploma in Dermatology</Link></td>
                                         </tr>
                                         <tr>
                                             <th>Experience</th>
-                                            <td>20+ years, New York Urgent Medical Care Serving California</td>
+                                            <td>Over 10 Years of NHS Experience</td>
                                         </tr>
                                         <tr>
                                             <th>Time</th>
-                                            <td> Monday - Friday 08:00 - 20:00<br />
-                                                Saturday 09:00 - 18:00<br />
-                                                Sunday 09:00 - 18:00
+                                            <td> Monday - Friday 09:00 - 18:00<br />
+                                                Saturday 09:00 - 16:00<br />
+                                                Sunday Closed
                                             </td>
                                         </tr>
                                         <tr>
                                             <th>Awards</th>
-                                            <td>2018 - 2019 : William Allan Award</td>
+                                            <td>2022 - 2023 : Excellence in Women's Health Award</td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <h3 className="font-20 m-b25 wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="0.8s">Professional Skills</h3>
-                                <div className="progress-wrap m-b35 wow fadeInUp" data-wow-delay="1.4s" data-wow-duration="0.8s">
-                                    <div className="progress-info">
-                                        <span className="title">Radiant Skin Dermatology</span>
-                                        <span className="progress-value">90%</span>
-                                    </div>
-                                    <div className="progress">
-                                        <div className="progress-bar" style={{ width: '90%' }}></div>
-                                    </div>
+                                {/* Expertise Section Start */}
+                                <div className="expertise-list m-b35 wow fadeInUp" data-wow-delay="2.0s" data-wow-duration="0.8s">
+                                    <ul className="list-unstyled">
+                                        <li className="m-b15">
+                                            <strong>Women's Health & Hormonal Care:</strong> Dr Sheikh offers expert guidance in all aspects of women's health, from menstrual issues and contraception to fertility and gynaecological concerns. She has a strong focus on menopause and hormonal balance, providing personalised treatment plans, including HRT and lifestyle management, to support women through perimenopause and beyond.
+                                        </li>
+                                        <li className="m-b15">
+                                            <strong>Mental Health Support:</strong> With a thoughtful and non-judgemental approach, Dr Sheikh helps patients navigate issues such as anxiety, depression, stress, and emotional wellbeing. She recognises the importance of early intervention and continuity of care in supporting mental health.
+                                        </li>
+                                        <li className="m-b15">
+                                            <strong>Chronic Disease Management:</strong> Dr Sheikh is experienced in managing long-term conditions such as diabetes, hypertension, and obesity. Her approach is holistic, blending medical treatment with lifestyle coaching to help patients make sustainable improvements in their overall wellbeing.
+                                        </li>
+                                        <li className="m-b15">
+                                            <strong>Dermatology and Skin Conditions:</strong> Holding a postgraduate diploma in dermatology, Dr Sheikh has a keen eye for diagnosing and managing common and complex skin issues—including acne, eczema, psoriasis, rosacea, and rashes—as well as offering aesthetic advice and mole assessments.
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div className="progress-wrap m-b35 wow fadeInUp" data-wow-delay="1.6s" data-wow-duration="0.8s">
-                                    <div className="progress-info">
-                                        <span className="title">Flawless Dermatology</span>
-                                        <span className="progress-value">78%</span>
-                                    </div>
-                                    <div className="progress">
-                                        <div className="progress-bar" style={{ width: '78%' }}></div>
-                                    </div>
-                                </div>
-                                <div className="progress-wrap m-b35 wow fadeInUp" data-wow-delay="1.8s" data-wow-duration="0.8s">
-                                    <div className="progress-info">
-                                        <span className="title">Luminous Dermatology</span>
-                                        <span className="progress-value">95%</span>
-                                    </div>
-                                    <div className="progress">
-                                        <div className="progress-bar" style={{ width: '95%' }}></div>
-                                    </div>
-                                </div>
+                                {/* Expertise Section End */}
                             </div>
                         </div>
                     </div>
@@ -181,4 +173,4 @@ function TeamDetail() {
         </>
     )
 }
-export default TeamDetail;
+export default TeamDetail2; 

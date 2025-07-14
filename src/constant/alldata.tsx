@@ -48,8 +48,9 @@ export const menudata : MenuItem[] =[
         classChange: "sub-menu-down",
         
         content: [
-            { title: "Team", to: "/team" },
-            { title: "Team Detail", to: "/team-detail" },
+            // { title: "Team", to: "/team" },
+            { title: "Dr Huma Sheikh", to: "/dr-huma" },
+            { title: "Dr Samira Masoud", to: "/dr-samira" },
         ],
     },
     {

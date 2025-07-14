@@ -104,6 +104,9 @@ import demohome1 from '../../public/assets/images/demo/home1.jpg';
 import demohome2 from '../../public/assets/images/demo/home2.jpg';
 import demohome3 from '../../public/assets/images/demo/home3.jpg';
 import bg2png from '../../public/assets/images/background/bg2.png'
+import drhuma from '../../public/assets/images/about/dr-huma.png'
+import drsamira from '../../public/assets/images/about/dr-samira.png'
+import meettheteam from '../../public/assets/images/about/meet-the-team.png'
 
 
 export const IMAGES : any = {
@@ -213,6 +216,9 @@ export const IMAGES : any = {
     demohome2: demohome2,
     demohome3: demohome3,
     bg2png: bg2png,
+    drhuma: drhuma,
+    drsamira: drsamira,
+    meettheteam: meettheteam,
 }
 export const SVGICONS = {
     smile: `<svg width="207" height="44" viewBox="0 0 207 44" fill="none" xmlns="http://www.w3.org/2000/svg">
