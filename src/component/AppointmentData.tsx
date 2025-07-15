@@ -111,7 +111,7 @@ function AppointmentData() {
                 </div >
                 <div className="col-lg-4 align-self-end">
                     <div className="content-media wow fadeInUp" data-wow-delay="1.0s" data-wow-duration="0.8s">
-                        <Image src={IMAGES.about1} alt="about1" />
+                        <Image src={IMAGES.drsamira} alt="about1" />
                     </div>
                 </div>
             </div >
