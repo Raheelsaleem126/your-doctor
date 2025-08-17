@@ -14,13 +14,13 @@ import '../../public/assets/css/style.css'
 import ScrolltoTop from "@/component/ScrolltoTop";
 
 export const metadata: Metadata = {
-    title: "ClinicMaster - Health & Medical NextJs Template",
-    description: "ClinicMaster is a clean and modern Health & Medical Next.js template. Ideal for clinics, hospitals, and healthcare providers, with responsive design, booking system, and customizable components.",
+    title: "Medical and Health Care",
+    description: "medical and health care department, clinic, hospital, doctor, health care, medical, health, doctor appointment, medical appointment, health care template, clinic template, hospital ",
     twitter: {      
-      title: "ClinicMaster – Health & Medical Next.js Template | DexignZone",
+      title: "medical health and care",
       description:
-        "Launch a modern and responsive healthcare website with ClinicMaster – a Next.js template crafted for medical professionals and clinics.",
-      images: ["https://clinicmaster.dexignzone.com/next/social-image.png"],
+        "medical health and care ",
+      // images: ["https://clinicmaster.dexignzone.com/next/social-image.png"],
     },
 };
 
@@ -30,9 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme-color="skin-indigo">
+    <html lang="en" data-theme-color="skin-blue">
       <head>
-        <meta property="og:title" content="ClinicMaster – Health & Medical Next Template | DexignZone" />        
+        <meta property="og:title" content="medical and health cre " />        
         <meta property="og:image" content="https://clinicmaster.dexignzone.com/next/social-image.png" />
         <meta property="og:url" content="https://clinicmaster.dexignzone.com/next" />
         <meta property="og:type" content="website" />

@@ -30,7 +30,7 @@ function Footer() {
                                     <div className="footer-logo logo-white">
                                         <Link href="/"><Image src={IMAGES.logowhite} alt="logo" /></Link>
                                     </div>
-                                    <p><span className="text-white">Your Doctor</span> provides comprehensive healthcare services with a focus on skin concerns, musculoskeletal issues, diabetes care, weight management, and sexual health. Our experienced team is dedicated to your well-being.</p>
+                                    <p className="text-white"><span className="text-white ">Your Doctor</span> provides comprehensive healthcare services with a focus on skin concerns, musculoskeletal issues, diabetes care, weight management, and sexual health. Our experienced team is dedicated to your well-being.</p>
                                     <div className="widget-rating2">
                                         <Image src={IMAGES.google} alt="google" />
                                         <div className="clearfix">
@@ -53,7 +53,7 @@ function Footer() {
                                 <div className="col-xl-2 col-md-3 col-6 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s" key={i}>
                                     <div className="widget widget_services">
                                         <h2 className="footer-title">{data.title} </h2>
-                                        <ul className="list-hover1">
+                                        <ul className="list-hover1 ">
                                             <li><Link href={data.link1}><span>{data.span1}</span></Link></li>
                                             <li><Link href={data.link2}><span>{data.span2}</span></Link></li>
                                             <li><Link href={data.link3}><span>{data.span3}</span></Link></li>
@@ -66,7 +66,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="footer-middle">
+                {/* <div className="footer-middle">
                     <div className="container">
                         <div className="fm-inner">
                             <div className="row align-items-center g-lg-5 g-4">
@@ -95,8 +95,8 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="footer-bottom">
+                </div> */}
+                {/* <div className="footer-bottom">
                     <div className="container">
                         <div className="fb-inner">
                             <div className="row">
@@ -114,7 +114,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </footer>
         </>
     )

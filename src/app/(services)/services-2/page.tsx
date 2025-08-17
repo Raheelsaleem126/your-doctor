@@ -125,7 +125,7 @@ function Services2() {
                       <li key={idx} className="mb-1">• {item}</li>
                     ))}
                   </ul>
-                  {service.note && <div className="small text-muted mb-2">{service.note}</div>}
+                  {service.title && <div className="small text-muted mb-2">{service.title}</div>}
                   <Link href={service.cta.href} className="btn btn-primary icon-link-hover-end radius-sm mt-3">
                     {service.cta.label} <i className="feather icon-arrow-right-circle" />
                   </Link>

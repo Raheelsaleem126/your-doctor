@@ -43,10 +43,10 @@ const HomePage = () =>{
                                         <div className="d-flex align-items-center m-b15 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.8s">
                                             <div className="info-widget style-12 m-r40 shadow-sm">
                                                 <div className="avatar-group">
-                                                    <Image className="avatar rounded-circle avatar-md border border-white border-2" src={IMAGES.smallavatar1} alt="avatr" />
-                                                    <Image className="avatar rounded-circle avatar-md border border-white border-2" src={IMAGES.smallavatar2} alt="avatr" />
-                                                    <Image className="avatar rounded-circle avatar-md border border-white border-2" src={IMAGES.smallavatar3} alt="avatr" />
-                                                    <Image className="avatar rounded-circle avatar-md border border-white border-2" src={IMAGES.smallavatar4} alt="avatr" />
+                                                    <Image className="avatar rounded-circle avatar-md border-white border-2" src={IMAGES.smallavatar1} alt="avatr" />
+                                                    <Image className="avatar rounded-circle avatar-md border-white border-2" src={IMAGES.smallavatar2} alt="avatr" />
+                                                    <Image className="avatar rounded-circle avatar-md border-white border-2" src={IMAGES.smallavatar3} alt="avatr" />
+                                                    <Image className="avatar rounded-circle avatar-md border-white border-2" src={IMAGES.smallavatar4} alt="avatr" />
                                                 </div>
                                                 <div className="clearfix"> <span>Talk to over 215 doctor</span> </div>
                                             </div>
@@ -131,17 +131,17 @@ const HomePage = () =>{
                         <Wecare2 />
                     </div>
                 </section>
-                <section className="content-inner" style={{ backgroundImage: `url(${IMAGES.bg2.src})`, backgroundPosition: 'right top', backgroundRepeat: 'no-repeat', backgroundSize: '100%' }}>
+                {/* <section className="content-inner" style={{ backgroundImage: `url(${IMAGES.bg2.src})`, backgroundPosition: 'right top', backgroundRepeat: 'no-repeat', backgroundSize: '100%' }}>
                     <div className="container">
                         <HighlyTeam />
                     </div>
-                </section>
-                <section className="content-wrapper style-12 bg-secondary background-blend-burn" style={{ backgroundImage: `url(${IMAGES.bg1.src})` }}>
+                </section> */}
+                {/* <section className="content-wrapper style-12 bg-secondary background-blend-burn" style={{ backgroundImage: `url(${IMAGES.bg1.src})` }}>
                     <div className="container">
                         <AppointmentData />
                     </div>
-                </section>
-                <section className="content-inner bg-light twentytwenty-bottom-spacing overlay-primary-light" style={{ backgroundImage: `url(${IMAGES.bg3.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                </section> */}
+                {/* <section className="content-inner bg-light twentytwenty-bottom-spacing overlay-primary-light" style={{ backgroundImage: `url(${IMAGES.bg3.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <div className="container">
                         <div className="section-head style-3 row align-items-end mb-0 mb-lg-4">
                             <div className="col-xl-7 col-lg-7 m-b30">
@@ -168,8 +168,8 @@ const HomePage = () =>{
                         </div>
                     </div>
                     <Twentytwenty />
-                </section>
-                <section className="content-inner twentytwenty-top-spacing overflow-hidden" style={{ backgroundImage: `url(${IMAGES.bg4.src})`, backgroundSize: 'cover', }}>
+                </section> */}
+                <section className="content-inner  overflow-hidden" style={{ backgroundImage: `url(${IMAGES.bg4.src})`, backgroundSize: 'cover', }}>
                     <div className="container">
                         <WhyChoose />
                     </div>
@@ -188,11 +188,11 @@ const HomePage = () =>{
                         <PricingPlan />
                     </div>
                 </section>
-                <section className="content-inner bg-light overlay-primary-light" style={{ backgroundImage: `url(${IMAGES.bg6.src})` }}>
+                {/* <section className="content-inner bg-light overlay-primary-light" style={{ backgroundImage: `url(${IMAGES.bg6.src})` }}>
                     <div className="container">
                         <NewsUpdate />
                     </div>
-                </section>
+                </section> */}
                 <section className="content-inner gradient-primary overflow-hidden">
                     <TestimonialSwiper />
                 </section>

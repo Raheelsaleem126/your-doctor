@@ -13,7 +13,7 @@ function TeamDetail2() {
         <>
             <Header columnstand="header-transparent" />
             <main className="page-content">
-                <Pagebanner title='Team Details' />
+                <Pagebanner title='Dr Huma Sheikh' />
                 <section className="content-inner-2">
                     <div className="container">
                         <div className="row">

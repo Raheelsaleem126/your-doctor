@@ -23,6 +23,12 @@ export const menudata : MenuItem[] =[
         title: "Home",
         to: "/",
     },
+     {
+        title: "About",
+        to: "/about-us",
+        
+      
+    },
     // {
     //     title: "Pages",
     //     classChange: "sub-menu-down",

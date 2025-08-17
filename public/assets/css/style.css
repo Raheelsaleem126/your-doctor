@@ -335,31 +335,97 @@ html[data-theme-color=skin-8] .site-header.style-2 .nav > li.sub-menu-down:hover
 }
 
 html[data-theme-color=skin-indigo] {
-  --bs-body-color: #374151;
-  --bs-heading-color: #6366F1;
-  --bs-heading-color-rgb: 99, 102, 241;
-  --bs-primary: #4F46E5;
-  --bs-secondary: #6366F1;
-  --bs-light: #F3F4F6;
-  --bs-primary-rgb: 79, 70, 229;
-  --bs-secondary-rgb: 99, 102, 241;
-  --bs-light-rgb: 243, 244, 246;
-  --bs-primary-text-emphasis: rgb(31.6, 28, 91.6);
-  --bs-secondary-text-emphasis: rgb(39.6, 40.8, 96.4);
-  --bs-light-text-emphasis: rgb(97.2, 97.6, 98.4);
-  --bs-primary-bg-subtle: rgb(219.8, 218, 249.8);
-  --bs-secondary-bg-subtle: rgb(223.8, 224.4, 252.2);
-  --bs-light-bg-subtle: rgb(252.6, 252.8, 253.2);
-  --bs-primary-border-subtle: rgb(184.6, 181, 244.6);
-  --bs-secondary-border-subtle: rgb(192.6, 193.8, 249.4);
-  --bs-light-border-subtle: rgb(250.2, 250.6, 251.4);
+  --bs-body-color: #4B0082;
+  --bs-heading-color: #4B0082;
+  --bs-heading-color-rgb: 75, 0, 130;
+  --bs-primary: #4B0082;
+  --bs-secondary: #9370DB;
+  --bs-light: #E6E6FA;
+  --bs-primary-rgb: 75, 0, 130;
+  --bs-secondary-rgb: 147, 112, 219;
+  --bs-light-rgb: 230, 230, 250;
+  --bs-primary-text-emphasis: rgb(30, 0, 52);
+  --bs-secondary-text-emphasis: rgb(58.8, 44.8, 87.6);
+  --bs-light-text-emphasis: rgb(92, 92, 100);
+  --bs-primary-bg-subtle: rgb(204, 153, 230);
+  --bs-secondary-bg-subtle: rgb(220, 200, 245);
+  --bs-light-bg-subtle: rgb(245, 245, 252);
+  --bs-primary-border-subtle: rgb(179, 128, 204);
+  --bs-secondary-border-subtle: rgb(200, 180, 230);
+  --bs-light-border-subtle: rgb(240, 240, 250);
   --bs-btn-hover-bg-shade-amount: 15%;
-  --bs-misty-violet: #8B5CF6;
-  --bs-misty-violet-rgb: 139, 92, 246;
-  --bs-light-indigo: #A5B4FC;
-  --bs-light-indigo-rgb: 165, 180, 252;
+  --bs-misty-violet: #C71585;
+  --bs-misty-violet-rgb: 199, 21, 133;
+  --bs-light-indigo: #F5F5DC;
+  --bs-light-indigo-rgb: 245, 245, 220;
+
+  /* Custom footer link colors */
+  --bs-footer-link-color: #FFFFFF; /* White for footer links */
+  --bs-footer-link-hover-color: #2A004D; /* Dark purple for hover */
 }
 
+html[data-theme-color=skin-indigo] .site-footer .list-hover1 a,
+html[data-theme-color=skin-indigo] .site-footer .nav-inline a {
+  color: var(--bs-footer-link-color);
+}
+
+html[data-theme-color=skin-indigo] .site-footer .list-hover1 a:hover,
+html[data-theme-color=skin-indigo] .site-footer .nav-inline a:hover {
+  color: var(--bs-footer-link-hover-color);
+}
+
+html[data-theme-color=skin-indigo] .site-header.style-2 .nav > li.menu-item-has-children.active > a:after,
+html[data-theme-color=skin-indigo] .site-header.style-2 .nav > li.menu-item-has-children:hover > a:after,
+html[data-theme-color=skin-indigo] .site-header.style-2 .nav > li.sub-menu-down.active > a:after,
+html[data-theme-color=skin-indigo] .site-header.style-2 .nav > li.sub-menu-down:hover > a:after {
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M6 0L7.69706 4.30294L12 6L7.69706 7.69706L6 12L4.30294 7.69706L0 6L4.30294 4.30294L6 0Z' fill='%234B0082'/></svg>");
+}
+html[data-theme-color=skin-blue] {
+  --bs-body-color: #1E3A8A;
+  --bs-heading-color: #1E3A8A;
+  --bs-heading-color-rgb: 30, 58, 138;
+  --bs-primary: #00C4CC;
+  --bs-secondary: #1E3A8A;
+  --bs-light: #E6F0FA;
+  --bs-primary-rgb: 0, 196, 204;
+  --bs-secondary-rgb: 30, 58, 138;
+  --bs-light-rgb: 230, 240, 250;
+  --bs-primary-text-emphasis: #006D74;
+  --bs-secondary-text-emphasis: #0F1A44;
+  --bs-light-text-emphasis: #4A5A7B;
+  --bs-primary-bg-subtle: #CFF9FA;
+  --bs-secondary-bg-subtle: #D1D6E6;
+  --bs-light-bg-subtle: #F1F5FC;
+  --bs-primary-border-subtle: #99E6EA;
+  --bs-secondary-border-subtle: #A3AEC5;
+  --bs-light-border-subtle: #E0E7F3;
+  --bs-btn-hover-bg-shade-amount: 15%;
+  --bs-misty-violet: #00C4CC; /* Adjusted to match cyan accent */
+  --bs-misty-violet-rgb: 0, 196, 204;
+  --bs-light-indigo: #E6F0FA; /* Adjusted to match light background */
+  --bs-light-indigo-rgb: 230, 240, 250;
+
+  /* Custom footer link colors */
+  --bs-footer-link-color: #FFFFFF; /* White for footer links */
+  --bs-footer-link-hover-color: #0F1A44; /* Darker blue for hover */
+}
+
+html[data-theme-color=skin-blue] .site-footer .list-hover1 a,
+html[data-theme-color=skin-blue] .site-footer .nav-inline a {
+  color: var(--bs-footer-link-color);
+}
+
+html[data-theme-color=skin-blue] .site-footer .list-hover1 a:hover,
+html[data-theme-color=skin-blue] .site-footer .nav-inline a:hover {
+  color: var(--bs-footer-link-hover-color);
+}
+
+html[data-theme-color=skin-blue] .site-header.style-2 .nav > li.menu-item-has-children.active > a:after,
+html[data-theme-color=skin-blue] .site-header.style-2 .nav > li.menu-item-has-children:hover > a:after,
+html[data-theme-color=skin-blue] .site-header.style-2 .nav > li.sub-menu-down.active > a:after,
+html[data-theme-color=skin-blue] .site-header.style-2 .nav > li.sub-menu-down:hover > a:after {
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M6 0L7.69706 4.30294L12 6L7.69706 7.69706L6 12L4.30294 7.69706L0 6L4.30294 4.30294L6 0Z' fill='%231E3A8A'/></svg>");
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -44658,9 +44724,9 @@ table.wishlist_table {
   color: var(--bs-primary);
 }
 
-footer {
+/* footer {
   background-image: url();
-}
+} */
 @media only screen and (max-width: 767px) {
   footer .row {
     --bs-gutter-x: 10px;
