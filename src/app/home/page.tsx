@@ -79,7 +79,7 @@ const HomePage = () =>{
                                             <Image className="move-4" src={IMAGES.herobanner5} alt="" />
                                         </div>
                                         <div className="item5" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)">
-                                            <Image className="move-4" src={IMAGES.herobanner6} alt="" />
+                                            {/* <Image className="move-4" src={IMAGES.herobanner6} alt="" /> */}
                                         </div>
                                         <div className="item6" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)">
                                             <div className="info-widget style-13 move-4">
@@ -110,7 +110,7 @@ const HomePage = () =>{
                                 </div>
                             </div>
                             <div className="item1">
-                                <Image className="move-1" src={IMAGES.herobanner2} alt="" />
+                                {/* <Image className="move-1" src={IMAGES.herobanner2} alt="" /> */}
                             </div>
                             <div className="item2">
                                 <Image className="move-2" src={IMAGES.herobanner4} alt="" />

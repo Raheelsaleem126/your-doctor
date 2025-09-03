@@ -32,11 +32,11 @@ function Wecare() {
                                 </div>
                             </div>
                         </div>
-                        <div className="item2" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(0px)">
+                        {/* <div className="item2" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(0px)">
                             <div className="media1 move-4">
                                 <Image src={IMAGES.herobanner4} alt="banner4" />
                             </div>
-                        </div>
+                        </div> */}
                         <div className="item3" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(0px)">
                             <svg 
                                 viewBox="0 0 496 175" fill="none" xmlns="http://www.w3.org/2000/svg"

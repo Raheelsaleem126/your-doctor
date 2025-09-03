@@ -52,9 +52,9 @@ function WhyChoose() {
                                 <Image src={IMAGES.about10} alt="about10" />
                             </div>
                         </div>
-                        <div className="item1 move-3">
+                        {/* <div className="item1 move-3">
                             <Image src={IMAGES.herobanner4} alt="banner4" />
-                        </div>
+                        </div> */}
                         <div className="item2 move-4">
                             <div className="info-widget style-1">
                                 <div className="avatar-group">
