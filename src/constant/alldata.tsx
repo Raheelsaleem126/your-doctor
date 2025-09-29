@@ -63,6 +63,10 @@ export const menudata : MenuItem[] =[
         to: "/services-2",
     },
 
+    {
+        title: "Nova",
+        to: "/nova",
+    },
     { 
         title: "Contact Us", 
         to: "/contact-us" 
