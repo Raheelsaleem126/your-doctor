@@ -93,8 +93,8 @@ export const compareswiperdata = [
 ]
 // contactmap 
 export const mapdata = [
-    { delay: '0.6s', title: 'United States', flag: IMAGES.unitedstate, },
-    { delay: '0.8s', title: 'Canada', flag: IMAGES.cananda, },
+    { delay: '0.6s', title: 'United Kingdom', flag: IMAGES.unitedstate, },
+    // { delay: '0.8s', title: 'Canada', flag: IMAGES.cananda, },
 ]
 // highlyteam 
 export const swiperteamdata = [
@@ -158,21 +158,21 @@ export const testiswiperdata = [
 ]
 // wecare 
 export const counterdata = [
-    { title: "Happy Patients", count: <CountUp end={45} duration={5} />, span: 'k', columnstand1: 'bg-color1', columnstand2: 'text-orange', delay: '0.6s', },
-    { title: "Specialists", count: <CountUp end={200} duration={5} />, span: '+', columnstand1: 'bg-color2', columnstand2: 'text-green', delay: '0.8s', },
-    { title: "Winning Awards", count: <CountUp end={150} duration={5} />, span: '+', columnstand1: 'bg-color3', columnstand2: 'text-primary', delay: '1.0s', },
+    { title: "satisfied Patients", count: <CountUp end={500} duration={5} />, span: '+', columnstand1: 'bg-color1', columnstand2: 'text-orange', delay: '0.6s', },
+    { title: "Qualified General Practioner", count: <CountUp end={3} duration={5} />, span: '+', columnstand1: 'bg-color2', columnstand2: 'text-green', delay: '0.8s', },
+    { title: "Years Combined Experience", count: <CountUp end={20} duration={5} />, span: '+', columnstand1: 'bg-color3', columnstand2: 'text-primary', delay: '1.0s', },
 ]
 // wecare2 
 export const wecaredata2 = [
-    { id: 1, title: 'Medical Service', delay: '0.2s', icon: <i className="flaticon-medical-symbol" />, },
-    { id: 2, title: '24/7 Medicines', delay: '0.4s', icon: <i className="flaticon-drugs" />, },
-    { id: 3, title: 'Best Doctor', delay: '0.6s', icon: <i className="flaticon-doctor" />, },
+    { id: 1, title: 'Medical Service', p:"YOUR DOCTOR offers comprehensive GP services, from routine check-ups to chronic disease management, ensuring you and your family receive the best possible care.", delay: '0.2s', icon: <i className="flaticon-medical-symbol" />, },
+    { id: 2, title: 'Accessible Care', p:"We make healthcare simple and accessible with same-day appointments, easy online booking, and personalized treatment plans tailored to your needs", delay: '0.4s', icon: <i className="flaticon-drugs" />, },
+    { id: 3, title: 'Best Doctor', p:"Our team of qualified and compassionate doctors provides patient-centered care, giving you confidence that your health is in safe hands.", delay: '0.6s', icon: <i className="flaticon-doctor" />, },
 ]
 // whychoose 
 export const accordiondata = [
-    { key: "0", image: IMAGES.blogsmall1, delay: '0.4s', title: 'Expertise in Dental Industry', },
-    { key: "1", image: IMAGES.blogsmall2, delay: '0.6s', title: 'Patient-Centered Care', },
-    { key: "2", image: IMAGES.blogsmall3, delay: '0.8s', title: 'Flexible Appointment Scheduling', },
+    { key: "0", image: IMAGES.blogsmall1, delay: '0.4s', title: 'Comprehensive Care',p:"We go beyond just treating symptoms our GP services include preventive check-ups, vaccinations, chronic disease management, and family medicine. Whether it’s a minor illness or long-term care, we ensure every patient receives the right attention for lasting health", },
+    { key: "1", image: IMAGES.blogsmall2, delay: '0.6s', title: 'Experienced Doctors',p:"Our team of highly qualified and compassionate GPs bring years of medical expertise and patient care experience. At YOUR DOCTOR, you are not just another appointment we listen carefully, provide clear guidance, and make your health our top priority", },
+    { key: "2", image: IMAGES.blogsmall3, delay: '0.8s', title: 'Accessible & Convenient',p:"We believe healthcare should be simple and stress-free. With same-day appointments, online booking options, and modern facilities, YOUR DOCTOR makes quality medical care available when and where you need it most", },
 ]
 // faqdata 
 export const pricingplandata = [

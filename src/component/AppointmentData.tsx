@@ -10,7 +10,7 @@ import { useEmailService } from "@/constant/useEmailService";
 
 function AppointmentData() {
     const [startDate, setStartDate] = useState<Date>(new Date());
-    const [selectCat, setSelectCat] = useState("Department");
+    const [selectCat, setSelectCat] = useState("Services");
     const [selectCatt, setSelectCatt] = useState("Doctor Name");
 
     //mail
@@ -76,11 +76,11 @@ function AppointmentData() {
                                                 <Dropdown className="bs-select form-control">
                                                     <Dropdown.Toggle as="div" className="p-1"> {selectCat} </Dropdown.Toggle>
                                                     <Dropdown.Menu>
-                                                        <Dropdown.Item onClick={() => setSelectCat("Department")}>Department</Dropdown.Item>
-                                                        <Dropdown.Item onClick={() => setSelectCat("Angioplasty")}>Angioplasty</Dropdown.Item>
-                                                        <Dropdown.Item onClick={() => setSelectCat("Cardiology")}>Cardiology</Dropdown.Item>
-                                                        <Dropdown.Item onClick={() => setSelectCat("Dental")}>Dental</Dropdown.Item>
-                                                        <Dropdown.Item onClick={() => setSelectCat("Eye Care")}>Eye Care</Dropdown.Item>
+                                                        <Dropdown.Item onClick={() => setSelectCat("Skin Concerns")}>Skin Concerns</Dropdown.Item>
+                                                        <Dropdown.Item onClick={() => setSelectCat("Musculoskeletal (MSK) Issues")}>Musculoskeletal (MSK) Issues</Dropdown.Item>
+                                                        <Dropdown.Item onClick={() => setSelectCat("Diabetes Care")}>Diabetes Care</Dropdown.Item>
+                                                        <Dropdown.Item onClick={() => setSelectCat("Obesity & Weight Management")}>Obesity & Weight Management</Dropdown.Item>
+                                                        <Dropdown.Item onClick={() => setSelectCat("Birth Control & Sexual Health")}>Birth Control & Sexual Health</Dropdown.Item>
                                                     </Dropdown.Menu>
                                                 </Dropdown>
                                             </div>
@@ -91,8 +91,8 @@ function AppointmentData() {
                                                     <Dropdown.Toggle as="div" className="p-1"> {selectCatt} </Dropdown.Toggle>
                                                     <Dropdown.Menu>
                                                         <Dropdown.Item onClick={() => setSelectCatt("Doctor Name")}>Doctor Name</Dropdown.Item>
-                                                        <Dropdown.Item onClick={() => setSelectCatt("Nashid Martines")}>Nashid Martines</Dropdown.Item>
-                                                        <Dropdown.Item onClick={() => setSelectCatt("Kenneth Fong")}>Kenneth Fong</Dropdown.Item>
+                                                        <Dropdown.Item onClick={() => setSelectCatt("Dr Huma Shaikh")}>Dr Huma Shaikh</Dropdown.Item>
+                                                        <Dropdown.Item onClick={() => setSelectCatt("Dr Samira Masoud")}>Dr Samira Masoud</Dropdown.Item>
                                                     </Dropdown.Menu>
                                                 </Dropdown>
                                             </div>

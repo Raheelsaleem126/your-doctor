@@ -36,9 +36,9 @@ function AboutUsPage() {
                         <BestDentist />
                     </div>
                 </section>
-                <section className="content-inner gradient-primary overflow-hidden">
+                {/* <section className="content-inner gradient-primary overflow-hidden">
                     <TestiSwiper />
-                </section>
+                </section> */}
                 <section className="content-inner-2">
                     <div className="container">
                         <MapForm />

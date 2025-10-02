@@ -58,13 +58,13 @@ function Contactus() {
                                                     </div>
                                                     <div className="icon-content">
                                                         <h5 className="dz-title fw-semibold">Office Address:</h5>
-                                                        <p>764 15768 Delmer Shoals, <br /> Eliasport, FL 04331-6195</p>
+                                                        <p>The Old Coach House, 149A Old Road, Clacton-on-Sea, <br /></p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <Link href="tel:+11234567890" className="btn btn-xl btn-icon btn-primary btn-rounded btn-shadow mb-3 mb-sm-0 wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.8s">
+                                    <Link href="tel:+4479564877644567890" className="btn btn-xl btn-icon btn-primary btn-rounded btn-shadow mb-3 mb-sm-0 wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.8s">
                                         <span className="left-icon"> <i className="feather icon-phone-call" /> </span> +1 123 456 7890
                                     </Link>
                                 </div>
@@ -118,9 +118,9 @@ function Contactus() {
                             </div>
                         </div>
                     </div>
-                    <div className="item1"><Image className="move-1" src={IMAGES.herobanner2} alt="" /></div>
-                    <div className="item2"><Image className="move-2" src={IMAGES.herobanner4} alt="" /></div>
-                    <div className="item3"><Image className="move-3" src={IMAGES.herobanner3} alt="" /></div>
+                    {/* <div className="item1"><Image className="move-1" src={IMAGES.herobanner2} alt="" /></div> */}
+                    {/* <div className="item2"><Image className="move-2" src={IMAGES.herobanner4} alt="" /></div> */}
+                    {/* <div className="item3"><Image className="move-3" src={IMAGES.herobanner3} alt="" /></div> */}
                     <svg className="banner-shape" viewBox="0 0 1920 180" fill="none" xmlns="http://www.w3.org/2000/svg"
                         dangerouslySetInnerHTML={{__html : SVGICONS.bannershape}}
                     />                        

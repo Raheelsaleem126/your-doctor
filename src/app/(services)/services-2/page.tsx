@@ -135,7 +135,7 @@ function Services2() {
           </div>
         </section>
         {/* <CompareSwiper /> */}
-        <section className="content-inner">
+        {/* <section className="content-inner">
           <div className="container">
             <div className="section-head style-2 m-b30 text-center wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
               <h2 className="title">Flexible Pricing Plans</h2>
@@ -143,7 +143,7 @@ function Services2() {
             </div>
             <CustomPricing />
           </div>
-        </section>
+        </section> */}
         <WantApponiment />
       </main>
       <Footer />

@@ -44,7 +44,7 @@ function BestDentist() {
                         </div>
                         <div className="item1" data-bottom-top="transform: translateY(-20px)" data-top-bottom="transform: translateY(10px)">
                             <div className="info-widget style-10 move-3">
-                                <span className="content-text text-primary"><span className="counter"><CountUp end={10} duration={5} /></span>+</span>
+                                <span className="content-text text-primary"><span className="counter"><CountUp end={20} duration={5} /></span>+</span>
                                 <h3 className="title m-b0">Years <br /> Experienced</h3>
                             </div>
                         </div>

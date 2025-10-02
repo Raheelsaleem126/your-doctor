@@ -15,7 +15,7 @@ function ContactMap() {
                     <div className="row content-wrapper">
                         <div className="col-xl-7 m-b30 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
                             <div className="map-wrapper style-3 me-xl-4">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28891.193971348785!2d75.8546432!3d25.1559936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1719221707984!5m2!1sen!2sin&zoomcontrol=false" width="600" height="450" style={{ border: '0' }} allowFullScreen
+                                <iframe src="https://www.google.com/maps/place/Old+Rd,+Clacton-on-Sea+CO15+3AU,+UK/@51.7954502,1.1455917,17z/data=!3m1!4b1!4m6!3m5!1s0x47d9132d0dba279f:0xc0d81103a2a53cb1!8m2!3d51.7954664!4d1.148421!16s%2Fg%2F1tf574f7?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D" width="600" height="450" style={{ border: '0' }} allowFullScreen
                                 loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                                 <div className="item1 position-absolute">
                                     {show && (
@@ -25,7 +25,7 @@ function ContactMap() {
                                             </div>
                                             <div className="content-text m-b20">
                                                 <h6 className="m-b5">Office Address: </h6>
-                                                <p className="m-b0">234 Oak Drive, Villagetown, USA</p>
+                                                <p>The Old Coach House, 149A Old Road, Clacton-on-Sea, <br />Essex, United Kingdom, CO15 3AU</p>
                                             </div>
                                             <div className="content-text">
                                                 <h6 className="m-b5">Working Hours: </h6>
@@ -51,8 +51,8 @@ function ContactMap() {
                                             <div className="dz-content">
                                                 <div className="inner-content clearfix">
                                                     <h3 className="title m-b10"><Image src={data.flag} alt="flag" /> {data.title}</h3>
-                                                    <p className="m-b10">123 Health Way, Suite 456 Goodland, 78910 United States</p>
-                                                    <Link href="tel:+0123-456-7890" className="text-body">+0 123-456-7890</Link>
+                                                    <p className="m-b10">The Old Coach House, 149A Old Road, Clacton-on-Sea, Essex, United Kingdom, CO15 3AU</p>
+                                                    <Link href="tel:+0123-456-7890" className="text-body">+447956487764</Link>
                                                 </div>
                                                 <div className="dz-footer">
                                                     <Link href="https://www.google.com/maps/" target="_blank" className="icon-link-hover-end">Get Directions 

@@ -30,7 +30,7 @@ function Footer() {
                                     <div className="footer-logo logo-white">
                                         <Link href="/"><Image src={IMAGES.logowhite} alt="logo" /></Link>
                                     </div>
-                                    <p className="text-white"><span className="text-white ">Your Doctor</span> provides comprehensive healthcare services with a focus on skin concerns, musculoskeletal issues, diabetes care, weight management, and sexual health. Our experienced team is dedicated to your well-being.</p>
+                                    <p className="text-white"><span className="text-white ">YOUR DOCTOR</span> provides comprehensive healthcare services with a focus on skin concerns, musculoskeletal issues, diabetes care, weight management, and sexual health. Our experienced team is dedicated to your well-being.</p>
                                     <div className="widget-rating2">
                                         <Image src={IMAGES.google} alt="google" />
                                         <div className="clearfix">
@@ -44,7 +44,7 @@ function Footer() {
                                                 </ul>
                                                 <span className="rating ms-1">(4.8)</span>
                                             </div>
-                                            <span className="text">12k+ ratings on google</span>
+                                            <span className="text">10+ ratings on google</span>
                                         </div>
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@ function Footer() {
                         <div className="fb-inner">
                             <div className="row">
                                 <div className="col-lg-6 col-md-12 text-start">
-                                    <p className="copyright-text">© <span className="current-year">2025</span> Your Doctor. All Rights Reserved.</p>
+                                    <p className="copyright-text">© <span className="current-year">2025</span> YOUR DOCTOR. All Rights Reserved.</p>
                                 </div>
                                 <div className="col-lg-6 col-md-12 text-end">
                                     <ul className="nav-inline">

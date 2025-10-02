@@ -141,7 +141,7 @@ function TeamDetail2() {
                                     <div className="icon-content">
                                         <h5 className="dz-title fw-semibold">Send us a Mail</h5>
                                         <p>
-                                            <Link href="mailto:info@example.com" className="text-body">info@example.com</Link><br />
+                                            <Link href="mailto:admin@youdoctor.co.uk.com" className="text-body">admin@youdoctor.co.uk.com</Link><br />
                                             <Link href="mailto:clinicmaster@example.com" className="text-body">clinicmaster@example.com</Link>
                                         </p>
                                     </div>

@@ -53,8 +53,8 @@ function Header({ columnstand } : Props) {
                         <div className="dz-topbar-inner d-flex justify-content-between align-items-center">
                             <div className="dz-topbar-left">
                                 <ul>
-                                    <li><Link href="tel:+11234567890"><i className="feather icon-phone-call text-primary" /> +11234567890</Link></li>
-                                    <li><Link href="mailto:info@example.com"><i className="feather icon-mail text-primary" /> info@example.com</Link></li>
+                                    <li><Link href="tel:+4479564877644567890"><i className="feather icon-phone-call text-primary" /> +447956487764</Link></li>
+                                    <li><Link href="mailto:admin@youdoctor.co.uk.com"><i className="feather icon-mail text-primary" /> admin@youdoctor.co.uk</Link></li>
                                 </ul>
                             </div>
                             <div className="dz-topbar-right">

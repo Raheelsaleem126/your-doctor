@@ -84,7 +84,7 @@ function TestimonialSwiper() {
                   <li><i className="fa fa-star" /></li>
                 </ul>
                 <span className="rating me-2">(4.8)</span>
-                <span className="text text-body fw-normal">12k+ ratings on google</span>
+                <span className="text text-body fw-normal">10+ ratings on google</span>
               </div>
             </div>
           </div>

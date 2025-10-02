@@ -10,7 +10,7 @@ function WhyChoose() {
             <div className="row content-wrapper style-10 align-items-center">
                 <div className="col-lg-6 m-b30">
                     <div className="section-head style-1 m-b30 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
-                        <h2 className="title">Why Choose Dental Care</h2>
+                        <h2 className="title">Why Choose GP Service at YOUR DOCTOR</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     </div>
                     <Accordion className="accordion dz-accordion style-2" defaultActiveKey="0">
@@ -21,7 +21,7 @@ function WhyChoose() {
                                     <div className="row align-items-center g-3">
                                         <div className="col-sm-8">
                                             <h3 className="title">{data.title}</h3>
-                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.</p>
+                                            <p>{data.p}</p>
                                         </div>
                                         <div className="col-sm-4">
                                             <div className="dz-media radius-md">
@@ -64,7 +64,7 @@ function WhyChoose() {
                                     <Image className="avatar rounded-circle avatar-sm border border-white border-2" src={IMAGES.smallavatar4} alt="avarat4" />
                                 </div>
                                 <div className="clearfix ms-2">
-                                    <span className="number text-primary">150k</span>
+                                    <span className="number text-primary">500+</span>
                                     <span>Patient Recovers</span>
                                 </div>
                             </div>

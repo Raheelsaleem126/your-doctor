@@ -47,7 +47,7 @@ function AboutUs2() {
                                             <li><i className="fa fa-star" /></li>
                                         </ul>
                                         <span className="rating text-white me-2">(4.8)</span>
-                                        <span className="text text-white">12k+ ratings on google</span>
+                                        <span className="text text-white">10+ ratings on google</span>
                                     </div>
                                     <p className="fw-medium">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
                                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search.</p>

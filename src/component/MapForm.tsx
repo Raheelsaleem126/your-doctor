@@ -21,7 +21,7 @@ function MapForm() {
             <div className="row">
                 <div className="col-xl-7 col-lg-6 m-b30 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
                     <div className="map-wrapper style-1">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28891.193971348785!2d75.8546432!3d25.1559936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1719221707984!5m2!1sen!2sin&zoomcontrol=false" 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2417.286537446449!2d1.1455917!3d51.7954502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d9132d0dba279f%3A0xc0d81103a2a53cb1!2sThe%20Old%20Coach%20House%2C%20149A%20Old%20Rd%2C%20Clacton-on-Sea%20CO15%203AU%2C%20UK!5e0!3m2!1sen!2suk!4v1696272345678!5m2!1sen!2suk"
                             width="600" height="450" style={{ border: '0', }} 
                             allowFullScreen 
                             loading="lazy" 
@@ -52,7 +52,8 @@ function MapForm() {
                                             </div>
                                             <div className="icon-content">
                                                 <h5 className="dz-title fw-semibold">Office Address:</h5>
-                                                <p>764 15768 Delmer Shoals, <br /> Eliasport, FL 04331-6195</p>
+                                                <p>The Old Coach House, 149A Old Road, Clacton-on-Sea, <br />Essex, United Kingdom, CO15 3AU</p>
+
                                             </div>
                                         </div>
                                     </div>

@@ -40,13 +40,13 @@ function Pagebanner({title} : titleProp) {
                     </div>
                 </div>
                 <div className="item1" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(0px)">
-                    <Image className="move-1" src={IMAGES.herobanner2} alt="move1" />
+                    {/* <Image className="move-1" src={IMAGES.herobanner2} alt="move1" /> */}
                 </div>
                 <div className="item2" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)">
-                    <Image className="move-2" src={IMAGES.herobanner4} alt="move2" />
+                    {/* <Image className="move-2" src={IMAGES.herobanner4} alt="move2" /> */}
                 </div>
                 <div className="item3" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)">
-                    <Image className="move-3" src={IMAGES.herobanner3} alt="move2" />
+                    {/* <Image className="move-3" src={IMAGES.herobanner3} alt="move2" /> */}
                 </div>
                 <svg className="banner-shape" viewBox="0 0 1920 180" fill="none" xmlns="http://www.w3.org/2000/svg"
                     dangerouslySetInnerHTML={{__html : SVGICONS.bannershape}}
