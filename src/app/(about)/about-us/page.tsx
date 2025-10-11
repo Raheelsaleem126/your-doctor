@@ -2,7 +2,7 @@
 import { Fragment } from "react";
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
-import BestDentist from "@/component/BestDentist";
+import BestDentist from "@/component/DrHuma";
 import ClientSwiper from "@/component/ClientSwiper";
 import MapForm from "@/component/MapForm";
 import Pagebanner from "@/component/Pagebanner";

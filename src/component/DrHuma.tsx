@@ -4,7 +4,7 @@ import { IMAGES } from "../constant/theme";
 import CountUp from "react-countup";
 import Image from 'next/image';
 
-function BestDentist() {
+function DrHuma() {
     return (
         <>
             <div className="row content-wrapper style-9 align-items-end">
@@ -66,4 +66,4 @@ function BestDentist() {
         </>
     )
 }
-export default BestDentist;
+export default DrHuma;

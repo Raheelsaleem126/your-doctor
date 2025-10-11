@@ -24,7 +24,8 @@ import herobanner4 from '../../public/assets/images/hero-banner/img4.webp'
 import herobanner5 from '../../public/assets/images/hero-banner/Homepage 50x50 patient 1 .png'
 import herobanner6 from '../../public/assets/images/hero-banner/Homepage 5 star image 50x50 - Copy.png'
 import about1 from '../../public/assets/images/about/img1.webp'
-import about2 from '../../public/assets/images/about/dr-huma.png'
+import about2 from '../../public/assets/images/about/dr-humasheikh.png'
+import DrSamira from '../../public/assets/images/about/dr-samira.png'
 import about3 from '../../public/assets/images/about/img3.webp'
 import about5 from '../../public/assets/images/about/Homepage contact us 700x850.png'
 import about6 from '../../public/assets/images/about/bg3.png'
@@ -143,6 +144,7 @@ export const IMAGES : any = {
     herobanner6: herobanner6,
     about1: about1,
     about2: about2,
+    // drsamira: DrSamira,
     about3: about3,
     about5: about5,
     about6: about6,

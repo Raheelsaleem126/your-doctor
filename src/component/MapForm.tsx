@@ -52,7 +52,7 @@ function MapForm() {
                                             </div>
                                             <div className="icon-content">
                                                 <h5 className="dz-title fw-semibold">Office Address:</h5>
-                                                <p>The Old Coach House, 149A Old Road, Clacton-on-Sea, <br />Essex, United Kingdom, CO15 3AU</p>
+                                                <p>Virtual Clinic <br />Essex, United Kingdom, CO15 3AU</p>
 
                                             </div>
                                         </div>

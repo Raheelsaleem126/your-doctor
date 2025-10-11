@@ -1,6 +1,7 @@
 "use client"
 // import AppointmentData from "@/component/AppointmentData";
-import BestDentist from "@/component/BestDentist";
+// import BestDentist from "@/component/DrHuma";
+import DrHuma from "@/component/DrHuma";
 // import HighlyTeam from "@/component/HighlyTeam";
 import MapForm from "@/component/MapForm";
 // import NewsUpdate from "@/component/NewsUpdate";
@@ -18,6 +19,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Fragment, useState } from "react";
 import { Modal } from "react-bootstrap";
+import DrSamira from "@/component/DrSamira";
 
 
 const HomePage = () =>{
@@ -139,7 +141,12 @@ const HomePage = () =>{
                 </section>
                 <section className="content-inner p-t50 bg-light">
                     <div className="container">
-                        <BestDentist />
+                        <DrHuma />
+                    </div>
+                </section>
+                  <section className="content-inner p-t50 bg-light">
+                    <div className="container">
+                        <DrSamira />
                     </div>
                 </section>
                 

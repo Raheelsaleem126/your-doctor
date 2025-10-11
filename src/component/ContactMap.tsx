@@ -25,7 +25,7 @@ function ContactMap() {
                                             </div>
                                             <div className="content-text m-b20">
                                                 <h6 className="m-b5">Office Address: </h6>
-                                                <p>The Old Coach House, 149A Old Road, Clacton-on-Sea, <br />Essex, United Kingdom, CO15 3AU</p>
+                                                <p>Virtual Clinic <br />Essex, United Kingdom, CO15 3AU</p>
                                             </div>
                                             <div className="content-text">
                                                 <h6 className="m-b5">Working Hours: </h6>
@@ -51,7 +51,7 @@ function ContactMap() {
                                             <div className="dz-content">
                                                 <div className="inner-content clearfix">
                                                     <h3 className="title m-b10"><Image src={data.flag} alt="flag" /> {data.title}</h3>
-                                                    <p className="m-b10">The Old Coach House, 149A Old Road, Clacton-on-Sea, Essex, United Kingdom, CO15 3AU</p>
+                                                    <p className="m-b10">Virtual Clinic Essex, United Kingdom, CO15 3AU</p>
                                                     <Link href="tel:+0123-456-7890" className="text-body">+447956487764</Link>
                                                 </div>
                                                 <div className="dz-footer">

@@ -8,6 +8,7 @@ import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
 import Image from "next/image";
 import { useEmailService } from "@/constant/useEmailService";
+import ContactForm from "@/component/ContactForm";
 
 
 function Contactus() {
@@ -58,63 +59,17 @@ function Contactus() {
                                                     </div>
                                                     <div className="icon-content">
                                                         <h5 className="dz-title fw-semibold">Office Address:</h5>
-                                                        <p>The Old Coach House, 149A Old Road, Clacton-on-Sea, <br /></p>
+                                                        <p>Virtual Clinic <br /></p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <Link href="tel:+4479564877644567890" className="btn btn-xl btn-icon btn-primary btn-rounded btn-shadow mb-3 mb-sm-0 wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.8s">
-                                        <span className="left-icon"> <i className="feather icon-phone-call" /> </span> +1 123 456 7890
+                                        <span className="left-icon"> <i className="feather icon-phone-call" /> </span> +44 795 648 7764
                                     </Link>
                                 </div>
-                                <div className="form-wrapper style-1 m-l40 wow fadeInUp" data-wow-delay="1.0s" data-wow-duration="0.8s">
-                                    <div className="form-body bg-white">
-                                        <div className="section-head style-1 m-b30">
-                                            <h2 className="title">Ask a Question</h2>
-                                            <p>If you have any questions, you can contact us. Please, fill out the form below.</p>
-                                        </div>
-                                        <form  ref={form} onSubmit={handleSubmit} className="dzForm row">
-                                            <input type="hidden" className="form-control" name="dzToDo" value="Contact" />                                            
-                                            <div className="dzFormMsg"></div>
-                                            <div className="col-sm-6 m-b30">
-                                                <div className="form-floating floating-underline">
-                                                    <input name="dzFirstName" type="text" className="form-control" id="inputYourName2" placeholder="First Name" />
-                                                    <label htmlFor="inputYourName2">First Name</label>
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-6 m-b30">
-                                                <div className="form-floating floating-underline">
-                                                    <input name="dzLastName" type="text" className="form-control" id="inputLastName2" placeholder="Last Name" />
-                                                    <label htmlFor="inputLastName2">Last Name</label>
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-6 m-b30">
-                                                <div className="form-floating floating-underline">
-                                                    <input name="dzPhoneNumber" type="number" className="form-control dz-number" id="inputPhoneNumber2" placeholder="Phone Number" />
-                                                    <label htmlFor="inputPhoneNumber2">Phone Number</label>
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-6 m-b30">
-                                                <div className="form-floating floating-underline">
-                                                    <input name="dzEmail" type="email" className="form-control" id="inputYourEmail2" placeholder="Phone Number" />
-                                                    <label htmlFor="inputYourEmail2">Your Email</label>
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-12 m-b30">
-                                                <div className="form-floating floating-underline">
-                                                    <textarea name="dzMessage" className="form-control" id="inputMessage" rows={6} placeholder="Select Service"></textarea>
-                                                    <label htmlFor="inputMessage">Message</label>
-                                                </div>
-                                            </div>
-                                            <div className="col-sm-12">
-                                                <button type="submit" name="submit" value="submit" className="btn btn-lg btn-icon btn-primary btn-shadow">
-                                                    Submit Now <span className="right-icon"><i className="feather icon-arrow-right" /></span>
-                                                </button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
+                             <ContactForm/>
                             </div>
                         </div>
                     </div>
@@ -128,7 +83,7 @@ function Contactus() {
                     <div className="banner-shape4"></div>
                     <div className="banner-shape5"></div>
                 </div>
-                <ContactMap />
+                {/* <ContactMap /> */}
                 <WantApponiment />
             </main>
             <Footer />            

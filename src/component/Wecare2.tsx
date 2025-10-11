@@ -21,7 +21,7 @@ function Wecare2() {
                             <div className="icon-content">
                                 <h3 className="dz-title">{data.title}</h3>
                                 <p>{data.p}</p>
-                                <Link href="" className="icon-link-hover-end m-t30 d-block">Read More <i className="feather icon-arrow-right-circle" /></Link>
+                                {/* <Link href="" className="icon-link-hover-end m-t30 d-block">Read More <i className="feather icon-arrow-right-circle" /></Link> */}
                             </div>
                         </div>
                     </div>

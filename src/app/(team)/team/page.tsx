@@ -1,4 +1,4 @@
-import BestDentist from "@/component/BestDentist";
+import BestDentist from "@/component/DrHuma";
 import HighlyTeam from "@/component/HighlyTeam";
 import MapForm from "@/component/MapForm";
 import Pagebanner from "@/component/Pagebanner";

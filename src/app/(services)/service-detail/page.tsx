@@ -36,7 +36,7 @@ function ServiceDetail() {
                                             </div>
                                             <div className="widget-content">
                                                 <h6 className="title">Contact us</h6>
-                                                <Link href="tel:+4479564877644567890" className="text-secondary">+1 123 456 7890</Link>
+                                                <Link href="tel:+4479564877644567890" className="text-secondary">+44 795 648 7764</Link>
                                             </div>
                                         </div>
                                     </div>
