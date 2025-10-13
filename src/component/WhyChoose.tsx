@@ -10,7 +10,7 @@ function WhyChoose() {
             <div className="row content-wrapper style-10 align-items-center">
                 <div className="col-lg-6 m-b30">
                     <div className="section-head style-1 m-b30 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
-                        <h2 className="title">Why Choose GP Service at YOUR DOCTOR</h2>
+                        <h2 className="title">Why Choose GP Service at Your Doctor</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     </div>
                     <Accordion className="accordion dz-accordion style-2" defaultActiveKey="0">

@@ -51,7 +51,7 @@ function Wecare() {
                     />
                   </div>
                   <div className="clearfix ms-2">
-                    <span className="number text-primary">150k</span>
+                    <span className="number text-primary">500+</span>
                     <span>Patient recovers</span>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ function Wecare() {
                   <span className="text ms-2">10+ ratings on google</span>
                 </div>
                 <p>
-                  At YOUR DOCTOR, we are committed to providing high-quality,
+                  At Your Doctor, we are committed to providing high-quality,
                   accessible, and compassionate GP services. Our experienced
                   doctors focus on your overall health, from routine check-ups
                   to chronic disease management, ensuring you and your family

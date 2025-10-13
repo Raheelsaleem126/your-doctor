@@ -73,7 +73,7 @@ function Header({ columnstand } : Props) {
                     <div className="main-bar clearfix">
                         <div className="container clearfix inner-bar text-white">
                             <div className="logo-header logo-dark">
-                                <Link href="/"><Image src={IMAGES.logowhite} alt="logo" /></Link>
+                                <Link href="/"><Image src={IMAGES.yourdoctorlogo} alt="logo" /></Link>
                             </div>
                             <button onClick={handleclick} className={`w3menu-toggler navicon ${show ? 'open' : ''}`} type="button" data-target="#W3Menu">
                                 <span></span>

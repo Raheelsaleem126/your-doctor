@@ -60,12 +60,16 @@ export const menudata : MenuItem[] =[
     // },
     {
         title: "Services",
-        to: "/services-2",
+        to: "/services",
     },
 
     { 
         title: "Contact Us", 
         to: "/contact-us" 
+    },
+    {
+        title: "FAQs",
+        to: "/faqs",
     },
 ]
 
@@ -115,17 +119,23 @@ export const newsdata = [
 ]
 // question  
 export const accordiondata2 = [
-    { key: "0", title: 'How much do you charge for pedicure ?' },
-    { key: "1", title: 'What types of treatments do you offer?' },
-    { key: "2", title: 'How do i book my appointment ?' },
-    { key: "3", title: 'Can i cancel my appointment ?' },
+    { key: "0", title: 'How do I book a virtual appointment?' },
+    { key: "1", title: 'What services are available through virtual consultations?' },
+    { key: "2", title: 'How much does a virtual consultation cost?' },
+    { key: "3", title: 'Can I get prescriptions through virtual appointments?' },
+    { key: "4", title: 'What technology do I need for a virtual consultation?' },
+    { key: "5", title: 'How long does a virtual appointment take?' },
+    { key: "6", title: 'Can I book same-day appointments?' },
+    { key: "7", title: 'What if I need to see a doctor in person?' },
+    { key: "8", title: 'How do I cancel or reschedule my appointment?' },
+    { key: "9", title: 'Is my medical information secure during virtual consultations?' },
 ]
 export const accordionnavdata = [
-    { i: 1, id: 'pills-tab1', target: '#pills-target-tabs1', title: 'Dental Care', },
-    { i: 2, id: 'pills-tab2', target: '#pills-target-tabs2', title: 'Cosmetic Dentistry', },
-    { i: 3, id: 'pills-tab3', target: '#pills-target-tabs3', title: 'Dental Technology', },
-    { i: 4, id: 'pills-tab4', target: '#pills-target-tabs4', title: 'Smile Care', },
-    { i: 5, id: 'pills-tab5', target: '#pills-target-tabs5', title: 'Teeth Whitening', },
+    { i: 1, id: 'pills-tab1', target: '#pills-target-tabs1', title: 'Virtual Appointments', },
+    { i: 2, id: 'pills-tab2', target: '#pills-target-tabs2', title: 'GP Services', },
+    { i: 3, id: 'pills-tab3', target: '#pills-target-tabs3', title: 'Booking & Scheduling', },
+    { i: 4, id: 'pills-tab4', target: '#pills-target-tabs4', title: 'Prescriptions & Treatment', },
+    { i: 5, id: 'pills-tab5', target: '#pills-target-tabs5', title: 'Technical Support', },
 ]
 // servicedata 
 export const servicedata = [
@@ -159,20 +169,20 @@ export const testiswiperdata = [
 // wecare 
 export const counterdata = [
     { title: "satisfied Patients", count: <CountUp end={500} duration={5} />, span: '+', columnstand1: 'bg-color1', columnstand2: 'text-orange', delay: '0.6s', },
-    { title: "Qualified General Practioner", count: <CountUp end={3} duration={5} />, span: '+', columnstand1: 'bg-color2', columnstand2: 'text-green', delay: '0.8s', },
+    { title: "Qualified General Practioner", count: <CountUp end={2} duration={5} />, span: '+', columnstand1: 'bg-color2', columnstand2: 'text-green', delay: '0.8s', },
     { title: "Years Combined Experience", count: <CountUp end={20} duration={5} />, span: '+', columnstand1: 'bg-color3', columnstand2: 'text-primary', delay: '1.0s', },
 ]
 // wecare2 
 export const wecaredata2 = [
-    { id: 1, title: 'Medical Service', p:"YOUR DOCTOR offers comprehensive GP services, from routine check-ups to chronic disease management, ensuring you and your family receive the best possible care.", delay: '0.2s', icon: <i className="flaticon-medical-symbol" />, },
+    { id: 1, title: 'Medical Service', p:"Your Doctor offers comprehensive GP services, from routine check-ups to chronic disease management, ensuring you and your family receive the best possible care.", delay: '0.2s', icon: <i className="flaticon-medical-symbol" />, },
     { id: 2, title: 'Accessible Care', p:"We make healthcare simple and accessible with same-day appointments, easy online booking, and personalized treatment plans tailored to your needs", delay: '0.4s', icon: <i className="flaticon-drugs" />, },
     { id: 3, title: 'Best Doctor', p:"Our team of qualified and compassionate doctors provides patient-centered care, giving you confidence that your health is in safe hands.", delay: '0.6s', icon: <i className="flaticon-doctor" />, },
 ]
 // whychoose 
 export const accordiondata = [
     { key: "0", image: IMAGES.blogsmall1, delay: '0.4s', title: 'Comprehensive Care',p:"We go beyond just treating symptoms our GP services include preventive check-ups, vaccinations, chronic disease management, and family medicine. Whether it’s a minor illness or long-term care, we ensure every patient receives the right attention for lasting health", },
-    { key: "1", image: IMAGES.blogsmall2, delay: '0.6s', title: 'Experienced Doctors',p:"Our team of highly qualified and compassionate GPs bring years of medical expertise and patient care experience. At YOUR DOCTOR, you are not just another appointment we listen carefully, provide clear guidance, and make your health our top priority", },
-    { key: "2", image: IMAGES.blogsmall3, delay: '0.8s', title: 'Accessible & Convenient',p:"We believe healthcare should be simple and stress-free. With same-day appointments, online booking options, and modern facilities, YOUR DOCTOR makes quality medical care available when and where you need it most", },
+    { key: "1", image: IMAGES.blogsmall2, delay: '0.6s', title: 'Experienced Doctors',p:"Our team of highly qualified and compassionate GPs bring years of medical expertise and patient care experience. At Your Doctor, you are not just another appointment we listen carefully, provide clear guidance, and make your health our top priority", },
+    { key: "2", image: IMAGES.blogsmall3, delay: '0.8s', title: 'Accessible & Convenient',p:"We believe healthcare should be simple and stress-free. With same-day appointments, online booking options, and modern facilities, Your Doctor makes quality medical care available when and where you need it most", },
 ]
 // faqdata 
 export const pricingplandata = [
@@ -322,15 +332,55 @@ export const service2data = [
 // footer 
 export const footerdata = [
     {
-        title: 'Our Services', span1: 'Skin Concerns', span2: 'MSK Issues', span3: 'Diabetes Care', span4: 'Weight Management', span5: 'Birth Control',
-        link1: '/services-2', link2: '/services-2', link3: '/services-2', link4: '/services-2', link5: '/services-2',
+        title: 'Our Services', 
+        span1: 'Musculoskeletal (MSK) Issues', 
+        span2: 'Skin Concerns', 
+        span3: 'Birth Control & Sexual Health', 
+        span4: 'Diabetes Care', 
+        span5: 'Weight Management',
+        link1: '/services#', 
+        link2: '/services', 
+        link3: '/services', 
+        link4: '/services', 
+        link5: '/services',
     },
     {
-        title: 'Quick Links', span1: 'About Us', span2: 'Our Team', span3: 'Appointments', span4: 'Contact Us', span5: 'FAQs',
-        link1: '/about-us', link2: '/team', link3: '/appointment', link4: '/contact-us', link5: '/faqs',
+        title: 'Our Doctors', 
+        span1: 'Dr Huma Sheikh', 
+        span2: 'Dr Samira Masoud', 
+        span3: '', 
+        span4: '', 
+        span5: '',
+        link1: '/dr-huma', 
+        link2: '/dr-samira', 
+        link3: '', 
+        link4: '', 
+        link5: '',
     },
     {
-        title: 'Legal', span1: 'Privacy Policy', span2: 'Terms & Conditions', span3: 'Patient Rights', span4: 'Insurance Info', span5: 'HIPAA Compliance',
-        link1: '#', link2: '#', link3: '#', link4: '#', link5: '#',
+        title: 'Pages', 
+        span1: 'About Us', 
+        span2: 'Appointments', 
+        span3: 'Contact Us', 
+        span4: 'FAQs', 
+        span5: 'Pricing',
+        link1: '/about-us', 
+        link2: '/appointment', 
+        link3: '/contact-us', 
+        link4: '/faqs', 
+        link5: '/',
+    },
+    {
+        title: 'Legal & Support', 
+        span1: 'Privacy Policy', 
+        span2: 'Terms & Conditions', 
+        span3: 'Patient Rights', 
+        span4: 'Insurance Info', 
+        span5: 'Testimonials',
+        link1: '#', 
+        link2: '#', 
+        link3: '#', 
+        link4: '#', 
+        link5: '/testimonial',
     },
 ]

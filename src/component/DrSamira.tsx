@@ -23,16 +23,22 @@ function DrSamira() {
                         <li>Dermatologist</li>
                         <li>Skin Care</li>
                     </ul>
-                    <div className="row align-items-center g-4">
-                        <div className="col-sm-6 d-flex wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="0.8s">
-                            <div className="text-center">
-                                <Image src={IMAGES.sign} alt="" />
-                                <span className="font-14 d-block">Dr Samira Namook</span>
-                            </div>
-                        </div>
-                        <div className="col-sm-6 wow fadeInUp" data-wow-delay="1.4s" data-wow-duration="0.8s">
-                            <Link href="/appointment" className="btn btn-lg btn-icon btn-primary"> Appointment
-                                <span className="right-icon"><i className="feather icon-arrow-right" /></span>
+                    <div className="row justify-content-center">
+                        <div className="col-12 text-center wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="0.8s">
+                            <Link href="/appointment" className="btn btn-lg btn-primary btn-hover1" style={{
+                                padding: '15px 30px',
+                                fontSize: '1.1rem',
+                                fontWeight: '600',
+                                borderRadius: '8px',
+                                textTransform: 'none',
+                                letterSpacing: '0.5px',
+                                boxShadow: '0 4px 15px rgba(0, 212, 170, 0.3)',
+                                transition: 'all 0.3s ease'
+                            }}>
+                                Book Appointment with Dr. Samira Namook
+                                <span className="ms-2">
+                                    <i className="fa fa-calendar-plus" />
+                                </span>
                             </Link>
                         </div>
                     </div>
