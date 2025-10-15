@@ -13,59 +13,189 @@ function ContactMap() {
             <section className="content-inner">
                 <div className="container">
                     <div className="row content-wrapper">
-                        <div className="col-xl-7 m-b30 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
-                            <div className="map-wrapper style-3 me-xl-4">
-                                <iframe src="https://www.google.com/maps/place/Old+Rd,+Clacton-on-Sea+CO15+3AU,+UK/@51.7954502,1.1455917,17z/data=!3m1!4b1!4m6!3m5!1s0x47d9132d0dba279f:0xc0d81103a2a53cb1!8m2!3d51.7954664!4d1.148421!16s%2Fg%2F1tf574f7?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D" width="600" height="450" style={{ border: '0' }} allowFullScreen
-                                loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                                <div className="item1 position-absolute">
-                                    {show && (
-                                        <Alert className="content-bx style-5 alert alert-dismissible fade show" role="alert">
-                                            <div className="content-logo">
-                                                <Image src={IMAGES.logo} alt="" />
-                                            </div>
-                                            <div className="content-text m-b20">
-                                                <h6 className="m-b5">Office Address: </h6>
-                                                <p>Virtual Clinic <br />Essex, United Kingdom, CO15 3AU</p>
-                                            </div>
-                                            <div className="content-text">
-                                                <h6 className="m-b5">Working Hours: </h6>
-                                                <p className="m-b0">Mon-Thu: 8:00am-5:00pm <br /> Fri: 8:00am-1:00pm</p>
-                                            </div>
-                                            <button onClick={() => setShow(false)} type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                                                <span dangerouslySetInnerHTML={{__html : SVGICONS.crossicon}} />
-                                            </button>
-                                        </Alert>
-                                    )}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-5">
-                            <div className="section-head style-1 m-b30 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">
-                                <h2 className="title m-b5">All Locations</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            </div>
-                            <div className="row">
-                                {mapdata.map((data, i) => (
-                                    <div className="col-xl-12 col-lg-6 m-b15 wow fadeInUp" data-wow-delay={data.delay} data-wow-duration="0.8s" key={i}>
-                                        <div className="dz-img-box style-2">
-                                            <div className="dz-content">
-                                                <div className="inner-content clearfix">
-                                                    <h3 className="title m-b10"><Image src={data.flag} alt="flag" /> {data.title}</h3>
-                                                    <p className="m-b10">Virtual Clinic Essex, United Kingdom, CO15 3AU</p>
-                                                    <Link href="tel:+0123-456-7890" className="text-body">+447956487764</Link>
-                                                </div>
-                                                <div className="dz-footer">
-                                                    <Link href="https://www.google.com/maps/" target="_blank" className="icon-link-hover-end">Get Directions 
-                                                        <i className="feather icon-arrow-up-right" />
-                                                    </Link>
+                        <div className="col-xl-12 m-b30 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
+                            <div className="virtual-healthcare-wrapper" style={{
+                                background: 'linear-gradient(135deg, #1e3a8a 0%,rgb(65, 94, 175) 100%)',
+                                borderRadius: '20px',
+                                padding: '40px',
+                                color: 'white',
+                                position: 'relative',
+                                overflow: 'hidden',
+                                height: '450px',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'center'
+                            }}>
+                                <div className="virtual-content text-center">
+                                    <div className="virtual-icon mb-4" style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        backgroundColor: 'rgba(255,255,255,0.2)',
+                                        borderRadius: '50%',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        fontSize: '32px',
+                                        margin: '0 auto'
+                                    }}>
+                                        <i className="fa fa-video-camera"></i>
+                                    </div>
+                                    <h2 className="text-white mb-3" style={{ fontSize: '2rem', fontWeight: '700' }}>Virtual Healthcare</h2>
+                                    <p className="text-white-50 mb-4" style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>
+                                        Experience professional healthcare from the comfort of your home. 
+                                        No travel required - we bring quality medical care to you.
+                                    </p>
+                                    <div className="virtual-features">
+                                        <div className="row g-3">
+                                            <div className="col-6">
+                                                <div className="feature-item" style={{
+                                                    backgroundColor: 'rgba(255,255,255,0.1)',
+                                                    padding: '15px',
+                                                    borderRadius: '10px',
+                                                    textAlign: 'center'
+                                                }}>
+                                                    <i className="fa fa-shield-alt mb-2" style={{ fontSize: '20px' }}></i>
+                                                    <p className="mb-0" style={{ fontSize: '0.85rem' }}>Secure & Private</p>
                                                 </div>
                                             </div>
-                                            <div className="dz-media">
-                                                <Image src={IMAGES.map} alt="map" />
+                                            <div className="col-6">
+                                                <div className="feature-item" style={{
+                                                    backgroundColor: 'rgba(255,255,255,0.1)',
+                                                    padding: '15px',
+                                                    borderRadius: '10px',
+                                                    textAlign: 'center'
+                                                }}>
+                                                    <i className="fa fa-clock mb-2" style={{ fontSize: '20px' }}></i>
+                                                    <p className="mb-0" style={{ fontSize: '0.85rem' }}>Flexible Hours</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-xl-6 m-b30 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">
+                            <div className="virtual-healthcare-wrapper" style={{
+                                background: 'linear-gradient(135deg, #00d4aa 0%, #00a8cc 100%)',
+                                borderRadius: '20px',
+                                padding: '40px',
+                                color: 'white',
+                                position: 'relative',
+                                overflow: 'hidden',
+                                height: '450px',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'center'
+                            }}>
+                                <div className="virtual-content text-center">
+                                    <div className="virtual-icon mb-4" style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        backgroundColor: 'rgba(255,255,255,0.2)',
+                                        borderRadius: '50%',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        fontSize: '32px',
+                                        margin: '0 auto'
+                                    }}>
+                                        <i className="fa fa-video-camera"></i>
+                                    </div>
+                                    <h2 className="text-white mb-3" style={{ fontSize: '2rem', fontWeight: '700' }}>Video Consultations</h2>
+                                    <p className="text-white-50 mb-4" style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>
+                                        Secure video calls with our experienced doctors from the comfort of your home. 
+                                        Professional medical care delivered virtually.
+                                    </p>
+                                    <div className="virtual-features">
+                                        <div className="row g-3">
+                                            <div className="col-6">
+                                                <div className="feature-item" style={{
+                                                    backgroundColor: 'rgba(255,255,255,0.1)',
+                                                    padding: '15px',
+                                                    borderRadius: '10px',
+                                                    textAlign: 'center'
+                                                }}>
+                                                    <i className="fa fa-shield-alt mb-2" style={{ fontSize: '20px' }}></i>
+                                                    <p className="mb-0" style={{ fontSize: '0.85rem' }}>Secure & Private</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-6">
+                                                <div className="feature-item" style={{
+                                                    backgroundColor: 'rgba(255,255,255,0.1)',
+                                                    padding: '15px',
+                                                    borderRadius: '10px',
+                                                    textAlign: 'center'
+                                                }}>
+                                                    <i className="fa fa-clock mb-2" style={{ fontSize: '20px' }}></i>
+                                                    <p className="mb-0" style={{ fontSize: '0.85rem' }}>Flexible Hours</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-6 m-b30 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.8s">
+                            <div className="virtual-healthcare-wrapper" style={{
+                                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                                borderRadius: '20px',
+                                padding: '40px',
+                                color: 'white',
+                                position: 'relative',
+                                overflow: 'hidden',
+                                height: '450px',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'center'
+                            }}>
+                                <div className="virtual-content text-center">
+                                    <div className="virtual-icon mb-4" style={{
+                                        width: '80px',
+                                        height: '80px',
+                                        backgroundColor: 'rgba(255,255,255,0.2)',
+                                        borderRadius: '50%',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        fontSize: '32px',
+                                        margin: '0 auto'
+                                    }}>
+                                        <i className="fa fa-phone"></i>
+                                    </div>
+                                    <h2 className="text-white mb-3" style={{ fontSize: '2rem', fontWeight: '700' }}>Phone Consultations</h2>
+                                    <p className="text-white-50 mb-4" style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>
+                                        Speak directly with our doctors via phone for immediate medical advice. 
+                                        Quick and convenient healthcare access.
+                                    </p>
+                                    <div className="virtual-features">
+                                        <div className="row g-3">
+                                            <div className="col-6">
+                                                <div className="feature-item" style={{
+                                                    backgroundColor: 'rgba(255,255,255,0.1)',
+                                                    padding: '15px',
+                                                    borderRadius: '10px',
+                                                    textAlign: 'center'
+                                                }}>
+                                                    <i className="fa fa-phone-alt mb-2" style={{ fontSize: '20px' }}></i>
+                                                    <p className="mb-0" style={{ fontSize: '0.85rem' }}>Direct Access</p>
+                                                </div>
+                                            </div>
+                                            <div className="col-6">
+                                                <div className="feature-item" style={{
+                                                    backgroundColor: 'rgba(255,255,255,0.1)',
+                                                    padding: '15px',
+                                                    borderRadius: '10px',
+                                                    textAlign: 'center'
+                                                }}>
+                                                    <i className="fa fa-bolt mb-2" style={{ fontSize: '20px' }}></i>
+                                                    <p className="mb-0" style={{ fontSize: '0.85rem' }}>Immediate</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

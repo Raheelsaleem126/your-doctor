@@ -40,7 +40,7 @@ const HomePage = () =>{
                                             <span className="smile"> Medical  <span dangerouslySetInnerHTML={{__html : SVGICONS.smile}} /> </span> Service Provider
                                         </h1>
                                         <div className="content-bx style-2 m-b40 primary wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">
-                                            YOUR DOCTOR provides accessible, professional, and personalized medical services for you and your family
+                                            Your Doctor provides accessible, professional, and personalized medical services for you and your family
                                         </div>
                                         <div className="d-flex align-items-center m-b15 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.8s">
                                             <div className="info-widget style-12 m-r40 shadow-sm">
@@ -90,7 +90,21 @@ const HomePage = () =>{
                                                     <span className="font-13">Select Doctor</span>
                                                 </div>
                                                 <div className="d-flex align-items-center m-b15">
-                                                    <Image className="rounded-circle avatar-md" src={IMAGES.smallavatar7} alt="" />
+                                                    <div className="doctor-icon" style={{
+                                                        width: '50px',
+                                                        height: '50px',
+                                                        backgroundColor: '#00d4aa',
+                                                        borderRadius: '50%',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center',
+                                                        fontSize: '20px',
+                                                        fontWeight: 'bold',
+                                                        color: 'white',
+                                                        marginRight: '10px'
+                                                    }}>
+                                                        <i className="fa fa-user-md"></i>
+                                                    </div>
                                                     <div className="clearfix m-l10">
                                                         <h6 className="name">Dr.Huma Sheikh</h6>
                                                         <span className="position"></span>
@@ -98,7 +112,21 @@ const HomePage = () =>{
                                                     <input className="form-check-input form-check1 ms-auto form-check-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                                                 </div>
                                                 <div className="d-flex align-items-center m-b15">
-                                                    <Image className="rounded-circle avatar-md" src={IMAGES.smallavatar8} alt="" />
+                                                    <div className="doctor-icon" style={{
+                                                        width: '50px',
+                                                        height: '50px',
+                                                        backgroundColor: '#00d4aa',
+                                                        borderRadius: '50%',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center',
+                                                        fontSize: '20px',
+                                                        fontWeight: 'bold',
+                                                        color: 'white',
+                                                        marginRight: '10px'
+                                                    }}>
+                                                        <i className="fa fa-user-md"></i>
+                                                    </div>
                                                     <div className="clearfix m-l10">
                                                         <h6 className="name">Dr.Samira Masoud</h6>
                                                         <span className="position"></span>

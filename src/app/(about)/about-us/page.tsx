@@ -47,7 +47,7 @@ function AboutUsPage() {
                 <section className="content-inner">
                     <div className="container">
                         <div className="row align-items-center">
-                            <ClientSwiper />
+                            {/* <ClientSwiper /> */}
                         </div>
                     </div>
                 </section>

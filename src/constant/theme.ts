@@ -11,6 +11,7 @@ import logo from '../../public/assets/images/logo.svg'
 import logo1 from '../../public/assets/images/logo/logo1.png'
 import google from '../../public/assets/images/google.svg'
 import logowhite from '../../public/assets/images/logoyour.png'
+import yourdoctorlogo from '../../public/assets/images/yourdoctorlogo-green.png'
 import smallavatar1 from '../../public/assets/images/avatar/small/Homepage 5 star image 50x50.png';
 import smallavatar2 from '../../public/assets/images/avatar/small/Homepage 50x50 patient 1 .png';
 import smallavatar3 from '../../public/assets/images/avatar/small/Homepage 50x50 patient 2.png';
@@ -24,8 +25,8 @@ import herobanner4 from '../../public/assets/images/hero-banner/img4.webp'
 import herobanner5 from '../../public/assets/images/hero-banner/Homepage 50x50 patient 1 .png'
 import herobanner6 from '../../public/assets/images/hero-banner/Homepage 5 star image 50x50 - Copy.png'
 import about1 from '../../public/assets/images/about/img1.webp'
-import about2 from '../../public/assets/images/about/dr-humasheikh.png'
-import DrSamira from '../../public/assets/images/about/dr-samira.png'
+import DrHuma from '../../public/assets/images/about/dr-humasheikh.png'
+import DrSamira from '../../public/assets/images/hero-banner/herobanner-1.png'
 import about3 from '../../public/assets/images/about/img3.webp'
 import about5 from '../../public/assets/images/about/Homepage contact us 700x850.png'
 import about6 from '../../public/assets/images/about/bg3.png'
@@ -128,6 +129,7 @@ export const IMAGES : any = {
     bg9: bg9,
     logo: logo,
     logowhite: logowhite,
+    yourdoctorlogo: yourdoctorlogo,
     google: google,
     logo1: logo1,
     smallavatar1: smallavatar1,
@@ -143,8 +145,8 @@ export const IMAGES : any = {
     herobanner5: herobanner5,
     herobanner6: herobanner6,
     about1: about1,
-    about2: about2,
-    // drsamira: DrSamira,
+    DrHuma: DrHuma,
+    drsamira: DrSamira,
     about3: about3,
     about5: about5,
     about6: about6,
@@ -224,8 +226,7 @@ export const IMAGES : any = {
     demohome2: demohome2,
     demohome3: demohome3,
     bg2png: bg2png,
-    drhuma: drhuma,
-    drsamira: drsamira,
+    drhuma: DrHuma,
     meettheteam: meettheteam,
     birthcontrol: birthcontrol,
     diabetescare: diabetescare,
