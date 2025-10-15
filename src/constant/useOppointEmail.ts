@@ -1,11 +1,11 @@
 import emailjs from "@emailjs/browser";
 
-export const useEmailService = () => {
+export const useOppointEmail = () => {
   const sendEmail = async (form: HTMLFormElement) => {
     try {
       const result = await emailjs.sendForm(
         "service_qmy5lbg",   
-        "template_ulfiz8a",  
+        "template_jacs1tt",  
         form,
         "DU6QvuP4z0eWoXxbO"  
       );
