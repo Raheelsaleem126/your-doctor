@@ -26,7 +26,7 @@ import herobanner5 from '../../public/assets/images/hero-banner/Homepage 50x50 p
 import herobanner6 from '../../public/assets/images/hero-banner/Homepage 5 star image 50x50 - Copy.png'
 import about1 from '../../public/assets/images/about/img1.webp'
 import DrHuma from '../../public/assets/images/about/dr-humasheikh.png'
-import DrSamira from '../../public/assets/images/hero-banner/herobanner-1.png'
+// import DrSamira from '../../public/assets/images/hero-banner/herobanner-1.png'
 import about3 from '../../public/assets/images/about/img3.webp'
 import about5 from '../../public/assets/images/about/Homepage contact us 700x850.png'
 import about6 from '../../public/assets/images/about/bg3.png'
@@ -107,7 +107,7 @@ import demohome2 from '../../public/assets/images/demo/home2.jpg';
 import demohome3 from '../../public/assets/images/demo/home3.jpg';
 import bg2png from '../../public/assets/images/background/bg2.png'
 import drhuma from '../../public/assets/images/about/dr-huma.png'
-import drsamira from '../../public/assets/images/about/dr-samira.png'
+import drsamira from '../../public/assets/images/about/dr-smaira.png'
 import meettheteam from '../../public/assets/images/about/meet-the-team.png'
 import birthcontrol from '../../public/assets/images/about/birth-control.jpg'
 import skinconcern from '../../public/assets/images/about/skin-concerns.jpg'
@@ -146,7 +146,7 @@ export const IMAGES : any = {
     herobanner6: herobanner6,
     about1: about1,
     DrHuma: DrHuma,
-    drsamira: DrSamira,
+    drsamira: drsamira,
     about3: about3,
     about5: about5,
     about6: about6,
@@ -173,6 +173,7 @@ export const IMAGES : any = {
     teamlarge5: teamlarge5,
     beforecomapare1: beforecomapare1,
     aftercomapare1: aftercomapare1,
+    
     // service1: service1,
     // service2: service2,
     // service3: service3,

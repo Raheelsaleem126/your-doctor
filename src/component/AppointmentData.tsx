@@ -1,6 +1,6 @@
 "use client"
 import { IMAGES } from "../constant/theme";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Dropdown } from "react-bootstrap";
 import Image from "next/image";
 import DatePicker from "react-datepicker";
@@ -11,11 +11,23 @@ function AppointmentData() {
   const [startDate, setStartDate] = useState<Date>(new Date());
   const [selectCat, setSelectCat] = useState("Select Service");
   const [selectCatt, setSelectCatt] = useState("Select Doctor");
-  const [statusMessage, setStatusMessage] = useState<string | null>(null); // ✅ success/error text
-  const [isSubmitting, setIsSubmitting] = useState(false); // ✅ loader state
+  const [statusMessage, setStatusMessage] = useState<string | null>(null);
+  const [statusType, setStatusType] = useState<"success" | "error" | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useRef<HTMLFormElement | null>(null);
   const { sendEmail } = useOppointEmail();
+
+  // 👇 Auto hide toast after 4 seconds
+  useEffect(() => {
+    if (statusMessage) {
+      const timer = setTimeout(() => {
+        setStatusMessage(null);
+        setStatusType(null);
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [statusMessage]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -28,15 +40,39 @@ function AppointmentData() {
     setIsSubmitting(false);
 
     if (result.success) {
-      setStatusMessage("✅ Your appointment request has been sent successfully!");
+      setStatusMessage("Your appointment request has been sent successfully!");
+      setStatusType("success");
       form.current.reset();
     } else {
-      setStatusMessage("❌ Failed to send appointment request. Please try again later.");
+      setStatusMessage("Failed to send appointment request. Please try again later.");
+      setStatusType("error");
     }
   };
 
   return (
     <>
+      {/* ✅ Popup Toast */}
+      {statusMessage && (
+        <div
+  className={`fixed top-5 right-5 z-50 px-4 py-3 rounded shadow-lg text-white transition-all duration-300 ${
+    statusType === "success" ? "shadow" : "shadow"
+  }`}
+  style={{
+    backgroundColor: statusType === "success" ? "#00BCD4" : "#DC3545", // cyan for success, red for error
+  }}
+>
+  {statusMessage}
+</div>
+      )}
+
+      <style jsx>{`
+        @keyframes fadeInOut {
+          0% { opacity: 0; transform: translateY(-10px); }
+          10%, 90% { opacity: 1; transform: translateY(0); }
+          100% { opacity: 0; transform: translateY(-10px); }
+        }
+      `}</style>
+
       <div className="row">
         <div className="col-lg-8">
           <div className="content-info">
@@ -153,11 +189,11 @@ function AppointmentData() {
                         type="submit"
                         name="submit"
                         value="submit"
-                        className="btn btn-lg btn-icon btn-white shadow-sm w-100"
+                        className="btn btn-lg btn-icon btn-white shadow-lg w-100"
                         disabled={isSubmitting}
                       >
                         <span className="w-100">
-                          {isSubmitting ? "Sending..." : "Book Appointment"}
+                          {isSubmitting ? "Sending..." : "Appointment"}
                         </span>
                         <span className="right-icon bg-primary">
                           <i className="feather icon-arrow-right" />
@@ -166,18 +202,6 @@ function AppointmentData() {
                     </div>
                   </div>
                 </form>
-
-                {/* ✅ Success/Error Message Display */}
-                {statusMessage && (
-                  <div
-                    className={`mt-3 text-center ${
-                      statusMessage.startsWith("✅") ? "text-success" : "text-danger"
-                    }`}
-                    style={{ fontWeight: "500" }}
-                  >
-                    {statusMessage}
-                  </div>
-                )}
               </div>
             </div>
           </div>

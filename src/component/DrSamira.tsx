@@ -19,9 +19,11 @@ function DrSamira() {
                         <li>Women's Health </li>
                         <li>Hormonal Care</li>
                         <li>Mental Health Support</li>
-                        <li>Chronic Disease Management</li>
+                        <li>Chronic|Disease|Management</li>
                         <li>Dermatologist</li>
                         <li>Skin Care</li>
+                        <li>Weight Loss Management</li>
+                        <li>Menopause Management</li>
                     </ul>
                     <div className="row justify-content-center">
                         <div className="col-12 text-center wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="0.8s">
@@ -46,7 +48,7 @@ function DrSamira() {
                 <div className="col-xl-6 col-lg-6 m-b30">
                     <div className="content-media">
                         <div className="dz-media" data-bottom-top="transform: translateY(30px)" data-top-bottom="transform: translateY(-30px)">
-                            <Image src={IMAGES.DrSamira} alt="" />
+                            <Image src={IMAGES.drsamira} alt="" />
                         </div>
                         <div className="item1" data-bottom-top="transform: translateY(-20px)" data-top-bottom="transform: translateY(10px)">
                             <div className="info-widget style-10 move-3">

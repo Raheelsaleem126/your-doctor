@@ -14,8 +14,8 @@ import '../../public/assets/css/style.css'
 import ScrolltoTop from "@/component/ScrolltoTop";
 
 export const metadata: Metadata = {
-    title: "Medical and Health Care",
-    description: "medical and health care department, clinic, hospital, doctor, health care, medical, health, doctor appointment, medical appointment, health care template, clinic template, hospital ",
+    title: "Your-Doctors ",
+    description: "Your-Doctors | Medical and Health Care ",
     twitter: {      
       title: "medical health and care",
       description:

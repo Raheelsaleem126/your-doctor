@@ -19,9 +19,11 @@ function DrHuma() {
                         <li>Women's Health </li>
                         <li>Hormonal Care</li>
                         <li>Mental Health Support</li>
-                        <li>Chronic Disease Management</li>
+                        <li>Chronic|Disease|Management</li>
                         <li>Dermatologist</li>
                         <li>Skin Care</li>
+                        <li>Weight Loss Management</li>
+                        <li>Menopause Management</li>
                     </ul>
                     <div className="row justify-content-center">
                         <div className="col-12 text-center wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="0.8s">

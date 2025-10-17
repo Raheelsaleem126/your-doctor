@@ -13,7 +13,7 @@ function TeamDetail() {
         <>
             <Header columnstand="header-transparent" />
             <main className="page-content">
-                <Pagebanner title='Dr Samira Masoud' />
+                <Pagebanner title='Dr Samira Namook' />
                 <section className="content-inner-2">
                     <div className="container">
                         <div className="row">
@@ -22,7 +22,7 @@ function TeamDetail() {
                                     <div className="widget wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
                                         <div className="dz-team style-6">
                                             <div className="dz-media">
-                                                <Image src={IMAGES.drsamira} alt="Dr Samira Masoud" />
+                                                <Image src={IMAGES.drsamira} alt="Dr Samira Namook" />
                                             </div>
                                             <ul className="dz-social">
                                                 <li><Link href="https://www.linkedin.com/showcase/dexignzone" target="_blank"><i className="fa-brands fa-linkedin" /></Link></li>
@@ -43,7 +43,7 @@ function TeamDetail() {
                             </div>
                             <div className="col-lg-6">
                                 <div className="section-head style-1 mb-30">
-                                    <h2 className="titlev fw-semibold m-b0 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">Dr Samira Masoud</h2>
+                                    <h2 className="titlev fw-semibold m-b0 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">Dr Samira Namook</h2>
                                     <p className="text-primary m-b20 fw-normal small wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">Private GP | MBBS | MRCGP | Over 15 Years of NHS Experience</p>
                                     <p className="fw-normal small wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.8s">Dr Samira Masoud is a highly experienced and compassionate General Practitioner with over 15 years of clinical experience in the NHS. She now offers private GP services with a strong focus on personalised, patient-centred care.</p>
                                     {/* <p className="fw-normal small wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.8s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> */}
