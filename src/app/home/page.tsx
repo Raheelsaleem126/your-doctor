@@ -167,12 +167,12 @@ const HomePage = () =>{
                         <WhyChoose />
                     </div>
                 </section>
-                <section className="content-inner p-t50 bg-light">
+                <section className="content-inner p-t50 p-b0 bg-light">
                     <div className="container">
                         <DrHuma />
                     </div>
                 </section>
-                  <section className="content-inner p-t50 bg-light">
+                  <section className="content-inner p-t0 bg-light">
                     <div className="container">
                         <DrSamira />
                     </div>

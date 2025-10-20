@@ -217,7 +217,7 @@ function TeamDetail2() {
             </div>
           </div>
         </section>
-        <section className="content-inner-2 bg-light">
+        <section className="content-inner-2 bg-light" id="book-appointment">
           <div className="container pb-5">
             <div
               className="section-head style-1 text-center m-b40 wow fadeInUp"

@@ -27,7 +27,7 @@ function DrHuma() {
                     </ul>
                     <div className="row justify-content-center">
                         <div className="col-12 text-center wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="0.8s">
-                            <Link href="/appointment" className="btn btn-lg btn-primary btn-hover1" style={{
+                            <Link href="/dr-huma#book-appointment" className="btn btn-lg btn-primary btn-hover1" style={{
                                 padding: '15px 30px',
                                 fontSize: '1.1rem',
                                 fontWeight: '600',
