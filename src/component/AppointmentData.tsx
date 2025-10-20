@@ -169,20 +169,6 @@ function AppointmentData() {
                         </Dropdown>
                       </div>
                     </div>
-
-                    {/* Message */}
-                    <div className="col-xl-8 col-sm-12 m-b10">
-                      <div className="form-floating floating-outline input-light">
-                        <textarea
-                          name="message"
-                          className="form-control"
-                          placeholder="Additional Message"
-                          rows={3}
-                        ></textarea>
-                        <label>Additional Message</label>
-                      </div>
-                    </div>
-
                     {/* Submit */}
                     <div className="col-xl-4 col-sm-6 m-b10">
                       <button
@@ -200,6 +186,21 @@ function AppointmentData() {
                         </span>
                       </button>
                     </div>
+
+                    {/* Message */}
+                    <div className="col-xl-8 col-sm-12 m-b10">
+                      <div className="form-floating floating-outline input-light">
+                        <textarea
+                          name="message"
+                          className="form-control"
+                          placeholder="Additional Message"
+                          rows={3}
+                        ></textarea>
+                        <label>Additional Message</label>
+                      </div>
+                    </div>
+
+                    
                   </div>
                 </form>
               </div>
@@ -210,7 +211,7 @@ function AppointmentData() {
         {/* Right Image */}
         <div className="col-lg-4 align-self-end">
           <div className="content-media wow fadeInUp" data-wow-delay="1.0s" data-wow-duration="0.8s">
-            <Image src={IMAGES.drsamira} alt="about1" />
+            <Image src={IMAGES.DrThree} alt="about1" />
           </div>
         </div>
       </div>

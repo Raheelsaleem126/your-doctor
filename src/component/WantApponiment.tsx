@@ -18,7 +18,7 @@ function WantApponiment() {
                         </div>
                         <div className="col-md-6 align-self-end">
                             <div className="dz-media" data-bottom-top="transform: translateY(100px)" data-top-bottom="transform: translateY(-20px)">
-                                <Image src={IMAGES.drsamira} alt="baner" />
+                                <Image src={IMAGES.DrThree} alt="baner" />
                                 <div className="item1">
                                     {/* <Image className="move-2" src={IMAGES.herobanner4} alt="banner" /> */}
                                 </div>

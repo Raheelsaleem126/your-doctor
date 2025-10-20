@@ -13,7 +13,7 @@ function TeamDetail() {
         <>
             <Header columnstand="header-transparent" />
             <main className="page-content">
-                <Pagebanner title='Dr Samira Namook' />
+                <Pagebanner title='Dr Samira Masoud' />
                 <section className="content-inner-2">
                     <div className="container">
                         <div className="row">
@@ -22,18 +22,18 @@ function TeamDetail() {
                                     <div className="widget wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
                                         <div className="dz-team style-6">
                                             <div className="dz-media">
-                                                <Image src={IMAGES.drsamira} alt="Dr Samira Namook" />
+                                                <Image src={IMAGES.drsamira} alt="Dr Samira Masoud" />
                                             </div>
                                             <ul className="dz-social">
                                                 <li><Link href="https://www.linkedin.com/showcase/dexignzone" target="_blank"><i className="fa-brands fa-linkedin" /></Link></li>
                                                 <li><Link href="https://www.instagram.com/dexignzone" target="_blank"><i className="fa-brands fa-instagram" /></Link></li>
                                                 <li><Link href="https://www.facebook.com/dexignzone" target="_blank"><i className="fa-brands fa-facebook-f" /></Link></li>
-                                                <li><Link href="https://www.x.com/dexignzone" target="_blank"><i className="fa-brands fa-x-twitter" /></Link></li>
-                                                <li><Link href="https://www.linkedin.com/@dexignzone" target="_blank"><i className="fa-brands fa-youtube" /></Link></li>
+                                                {/* <li><Link href="https://www.x.com/dexignzone" target="_blank"><i className="fa-brands fa-x-twitter" /></Link></li> */}
+                                                {/* <li><Link href="https://www.linkedin.com/@dexignzone" target="_blank"><i className="fa-brands fa-youtube" /></Link></li> */}
                                             </ul>
                                             <div className="item1">
                                                 <div className="info-widget style-10 move-3">
-                                                    <span className="content-text text-primary"><span className="counter"><CountUp end={15} duration={5} /></span>+</span>
+                                                    <span className="content-text text-primary"><span className="counter"><CountUp end={20} duration={5} /></span>+</span>
                                                     <h3 className="title m-b0">Years <br /> Experienced</h3>
                                                 </div>
                                             </div>
@@ -43,7 +43,7 @@ function TeamDetail() {
                             </div>
                             <div className="col-lg-6">
                                 <div className="section-head style-1 mb-30">
-                                    <h2 className="titlev fw-semibold m-b0 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">Dr Samira Namook</h2>
+                                    <h2 className="titlev fw-semibold m-b0 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">Dr Samira Masoud</h2>
                                     <p className="text-primary m-b20 fw-normal small wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">Private GP | MBBS | MRCGP | Over 15 Years of NHS Experience</p>
                                     <p className="fw-normal small wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.8s">Dr Samira Masoud is a highly experienced and compassionate General Practitioner with over 15 years of clinical experience in the NHS. She now offers private GP services with a strong focus on personalised, patient-centred care.</p>
                                     {/* <p className="fw-normal small wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.8s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> */}
@@ -143,8 +143,8 @@ function TeamDetail() {
                                         </span>
                                     </div>
                                     <div className="icon-content">
-                                        <h5 className="dz-title fw-semibold">Address</h5>
-                                        <p>1247/Plot No. 39, 15th Phase, Colony, Kukatpally, Hyderabad</p>
+                                        <h5 className="dz-title fw-semibold">Virtual Clinic</h5>
+                                        <p>Serving patients online across the UK</p>
                                     </div>
                                 </div>
                             </div>
@@ -158,8 +158,8 @@ function TeamDetail() {
                                     <div className="icon-content">
                                         <h5 className="dz-title fw-semibold">Call Us</h5>
                                         <p>
-                                            <Link href="tel:+01234567890" className="text-body">+0 123-456-7890</Link><br />
-                                            <Link href="tel:+09876543210" className="text-body">+0 987-654-3210</Link>
+                                            <Link href="tel:+447956487764" className="text-body">+44 7956 487764</Link><br />
+                                            <Link href="tel:+447540634228" className="text-body">+44 7540 634228</Link>
                                         </p>
                                     </div>
                                 </div>
@@ -174,8 +174,7 @@ function TeamDetail() {
                                     <div className="icon-content">
                                         <h5 className="dz-title fw-semibold">Send us a Mail</h5>
                                         <p>
-                                            <Link href="mailto:admin@youdoctor.co.uk.com" className="text-body">admin@youdoctor.co.uk.com</Link><br />
-                                            <Link href="mailto:clinicmaster@example.com" className="text-body">clinicmaster@example.com</Link>
+                                            <Link href="mailto:yourdoctors.gp@gmail.com" className="text-body">yourdoctors.gp@gmail.com</Link><br />
                                         </p>
                                     </div>
                                 </div>
@@ -189,7 +188,9 @@ function TeamDetail() {
                                     </div>
                                     <div className="icon-content">
                                         <h5 className="dz-title fw-semibold">Opening Time</h5>
-                                        <p>Mon-Thu: 8:00am-5:00pm <br /> Fri: 8:00am-1:00pm</p>
+                                        <p>Monday - Friday: 09:00 - 18:00<br />
+                                            Saturday: 09:00 - 16:00<br />
+                                            Sunday: Closed</p>
                                     </div>
                                 </div>
                             </div>

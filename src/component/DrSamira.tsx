@@ -11,8 +11,8 @@ function DrSamira() {
                 <div className="col-xl-6 col-lg-6 m-b30">
                     <div className="section-head style-2 m-b30">
                         <div className="sub-title wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">General Practitioner</div>
-                        <h2 className="title wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">About Dr Samira Namook</h2>
-                        <p className="fw-normal wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.8s"><strong className="text-secondary fw-semibold">Dr Samira Namook</strong> is a highly skilled and compassionate General Practitioner with over 10 years of experience in the NHS. Her clinical background is complemented by advanced qualifications in women's health, reproductive medicine, and dermatology, making her a versatile and trusted doctor for a wide range of health concerns.</p>
+                        <h2 className="title wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">About Dr Samira Masoud</h2>
+                        <p className="fw-normal wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.8s"><strong className="text-secondary fw-semibold">Dr Samira Masoud</strong> is a highly skilled and compassionate General Practitioner with over 10 years of experience in the NHS. Her clinical background is complemented by advanced qualifications in women's health, reproductive medicine, and dermatology, making her a versatile and trusted doctor for a wide range of health concerns.</p>
                     </div>
                     <h3 className="text-primary title-dashed-separator wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.8s">About Skills</h3>
                     <ul className="list-check text-secondary fw-medium grid-2 m-b35 wow fadeInUp" data-wow-delay="1.0s" data-wow-duration="0.8s">
@@ -37,7 +37,7 @@ function DrSamira() {
                                 boxShadow: '0 4px 15px rgba(0, 212, 170, 0.3)',
                                 transition: 'all 0.3s ease'
                             }}>
-                                Book Appointment with Dr. Samira Namook
+                                Book Appointment with Dr. Samira Masoud
                                 <span className="ms-2">
                                     <i className="fa fa-calendar-plus" />
                                 </span>

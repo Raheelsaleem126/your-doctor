@@ -110,8 +110,8 @@ function TeamDetail2() {
                                         </span>
                                     </div>
                                     <div className="icon-content">
-                                        <h5 className="dz-title fw-semibold">Address</h5>
-                                        <p>1247/Plot No. 39, 15th Phase, Colony, Kukatpally, Hyderabad</p>
+                                        <h5 className="dz-title fw-semibold">Virtual Clinic</h5>
+                                        <p>Serving patients online across the UK</p>
                                     </div>
                                 </div>
                             </div>
@@ -125,8 +125,8 @@ function TeamDetail2() {
                                     <div className="icon-content">
                                         <h5 className="dz-title fw-semibold">Call Us</h5>
                                         <p>
-                                            <Link href="tel:+01234567890" className="text-body">+0 123-456-7890</Link><br />
-                                            <Link href="tel:+09876543210" className="text-body">+0 987-654-3210</Link>
+                                            <Link href="tel:+447956487764" className="text-body">+44 7956 487764</Link><br />
+                                            <Link href="tel:+447540634228" className="text-body">+44 7540 634228</Link>
                                         </p>
                                     </div>
                                 </div>
@@ -141,8 +141,7 @@ function TeamDetail2() {
                                     <div className="icon-content">
                                         <h5 className="dz-title fw-semibold">Send us a Mail</h5>
                                         <p>
-                                            <Link href="mailto:admin@youdoctor.co.uk.com" className="text-body">admin@youdoctor.co.uk.com</Link><br />
-                                            <Link href="mailto:clinicmaster@example.com" className="text-body">clinicmaster@example.com</Link>
+                                            <Link href="mailto:yourdoctors.gp@gmail.com" className="text-body">yourdoctors.gp@gmail.com</Link><br />
                                         </p>
                                     </div>
                                 </div>
@@ -156,7 +155,9 @@ function TeamDetail2() {
                                     </div>
                                     <div className="icon-content">
                                         <h5 className="dz-title fw-semibold">Opening Time</h5>
-                                        <p>Mon-Thu: 8:00am-5:00pm <br /> Fri: 8:00am-1:00pm</p>
+                                        <p>Monday - Friday: 09:00 - 18:00<br />
+                                            Saturday: 09:00 - 16:00<br />
+                                            Sunday: Closed</p>
                                     </div>
                                 </div>
                             </div>

@@ -50,7 +50,7 @@ const HomePage = () =>{
                                                     <Image className="avatar rounded-circle avatar-md border-white border-2" src={IMAGES.smallavatar3} alt="avatr" />
                                                     <Image className="avatar rounded-circle avatar-md border-white border-2" src={IMAGES.smallavatar4} alt="avatr" />
                                                 </div>
-                                                <div className="clearfix"> <span>Talk to our 3 Specialist</span> </div>
+                                                <div className="clearfix"> <span>Talk to our 2 Specialist</span> </div>
                                             </div>
                                             <Link href="/about-us" className="btn btn-square btn-xl btn-white shadow-sm btn-rounded"
                                                 dangerouslySetInnerHTML={{__html : SVGICONS.uparrow}}

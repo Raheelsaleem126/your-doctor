@@ -53,8 +53,8 @@ function Header({ columnstand } : Props) {
                         <div className="dz-topbar-inner d-flex justify-content-between align-items-center">
                             <div className="dz-topbar-left">
                                 <ul>
-                                    <li><Link href="tel:+4479564877644567890"><i className="feather icon-phone-call text-primary" /> +447956487764</Link></li>
-                                    <li><Link href="mailto:admin@youdoctor.co.uk.com"><i className="feather icon-mail text-primary" />yourdoctors.gp@gmail.com</Link></li>
+                                    <li><Link href="tel:+447956487764"><i className="feather icon-phone-call text-primary" /> +44 7956 487764</Link></li>
+                                    <li><Link href="mailto:yourdoctors.gp@gmail.com"><i className="feather icon-mail text-primary" />yourdoctors.gp@gmail.com</Link></li>
                                 </ul>
                             </div>
                             <div className="dz-topbar-right">
@@ -62,8 +62,8 @@ function Header({ columnstand } : Props) {
                                     <li> <Link href="https://www.linkedin.com/showcase/dexignzone" target="_blank"> <i className="fa-brands fa-linkedin" /> </Link> </li>
                                     <li> <Link href="https://www.instagram.com/dexignzone" target="_blank"> <i className="fa-brands fa-instagram" /> </Link>  </li>
                                     <li> <Link href="https://www.facebook.com/dexignzone" target="_blank"> <i className="fa-brands fa-facebook-f" /> </Link>  </li>
-                                    <li> <Link href="https://www.x.com/dexignzone" target="_blank"> <i className="fa-brands fa-x-twitter" /> </Link>  </li>
-                                    <li> <Link href="https://www.linkedin.com/@dexignzone" target="_blank"> <i className="fa-brands fa-youtube" /> </Link>  </li>
+                                    {/* <li> <Link href="https://www.x.com/dexignzone" target="_blank"> <i className="fa-brands fa-x-twitter" /> </Link>  </li> */}
+                                    {/* <li> <Link href="https://www.linkedin.com/@dexignzone" target="_blank"> <i className="fa-brands fa-youtube" /> </Link>  </li> */}
                                 </ul>
                             </div>
                         </div>
