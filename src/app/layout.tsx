@@ -14,12 +14,12 @@ import '../../public/assets/css/style.css'
 import ScrolltoTop from "@/component/ScrolltoTop";
 
 export const metadata: Metadata = {
-    title: "Your-Doctors ",
-    description: "Your-Doctors | Medical and Health Care ",
+    title: "Your Doctor - Online GP Consultation",
+    description: "Your Doctor | Online GP Consultation ",
     twitter: {      
-      title: "Your-Doctors ",
+      title: "Your Doctor ",
       description:
-        "Your-Doctors | Medical and Health Care ",
+        "Your Doctor | Online GP Consultation ",
       // images: ["https://clinicmaster.dexignzone.com/next/social-image.png"],
     },
 };

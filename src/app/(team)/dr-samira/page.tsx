@@ -28,6 +28,11 @@ function TeamDetail() {
                                                 <li><Link href="https://www.linkedin.com/showcase/dexignzone" target="_blank"><i className="fa-brands fa-linkedin" /></Link></li>
                                                 <li><Link href="https://www.instagram.com/dexignzone" target="_blank"><i className="fa-brands fa-instagram" /></Link></li>
                                                 <li><Link href="https://www.facebook.com/dexignzone" target="_blank"><i className="fa-brands fa-facebook-f" /></Link></li>
+                                                <li>
+                                                    <Link href="https://wa.me/447540634228?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank">
+                                                        <i className="fa-brands fa-whatsapp" />
+                                                    </Link>
+                                                </li>
                                                 {/* <li><Link href="https://www.x.com/dexignzone" target="_blank"><i className="fa-brands fa-x-twitter" /></Link></li> */}
                                                 {/* <li><Link href="https://www.linkedin.com/@dexignzone" target="_blank"><i className="fa-brands fa-youtube" /></Link></li> */}
                                             </ul>

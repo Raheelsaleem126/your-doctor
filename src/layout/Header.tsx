@@ -145,6 +145,16 @@ function Header({ columnstand } : Props) {
                                 <div className="extra-cell">
                                     <ul className="header-right">
                                         <li className="nav-item">
+                                            <Link
+                                                href="https://wa.me/447956487764?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                                                className="btn btn-primary btn-hover1"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                Whatsapp A GP
+                                            </Link>
+                                        </li>
+                                        <li className="nav-item">
                                             <Link href="/appointment" className="btn btn-primary btn-hover1">
                                                 Appointment
                                             </Link>

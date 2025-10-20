@@ -25,11 +25,16 @@ function TeamDetail2() {
                                                 <Image src={IMAGES.drhuma} alt="Dr Huma Sheikh" />
                                             </div>
                                             <ul className="dz-social">
-                                                <li><Link href="https://www.linkedin.com/showcase/dexignzone" target="_blank"><i className="fa-brands fa-linkedin" /></Link></li>
-                                                <li><Link href="https://www.instagram.com/dexignzone" target="_blank"><i className="fa-brands fa-instagram" /></Link></li>
-                                                <li><Link href="https://www.facebook.com/dexignzone" target="_blank"><i className="fa-brands fa-facebook-f" /></Link></li>
-                                                <li><Link href="https://www.x.com/dexignzone" target="_blank"><i className="fa-brands fa-x-twitter" /></Link></li>
-                                                <li><Link href="https://www.linkedin.com/@dexignzone" target="_blank"><i className="fa-brands fa-youtube" /></Link></li>
+                                                <li><Link href="https://www.linkedin.com" target="_blank"><i className="fa-brands fa-linkedin" /></Link></li>
+                                                <li><Link href="https://www.instagram.com" target="_blank"><i className="fa-brands fa-instagram" /></Link></li>
+                                                <li><Link href="https://www.facebook.com" target="_blank"><i className="fa-brands fa-facebook-f" /></Link></li>
+                                                <li>
+                                                    <Link href="https://wa.me/447956487764?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank">
+                                                        <i className="fa-brands fa-whatsapp" />
+                                                    </Link>
+                                                </li>
+                                                {/* <li><Link href="https://www.x.com/dexignzone" target="_blank"><i className="fa-brands fa-x-twitter" /></Link></li> */}
+                                                {/* <li><Link href="https://www.linkedin.com/@dexignzone" target="_blank"><i className="fa-brands fa-youtube" /></Link></li> */}
                                             </ul>
                                             <div className="item1">
                                                 <div className="info-widget style-10 move-3">
