@@ -21,61 +21,55 @@ interface MenuItem {
 export const menudata : MenuItem[] =[
     {
         title: "Home",
-        classChange: "has-mega-menu",
-
-        content: [
-            { title: "01 Skin Care", to: "https://next-clinicmaster-skincare.vercel.app/", image: IMAGES.demohome3, },
-            { title: "02 Dentist", to: "/", image: IMAGES.demohome2, },
-            { title: "03 Medical", to: "https://next-clinicmaster-medical.vercel.app/", image: IMAGES.demohome1, },
-        ],
+        to: "/",
     },
+     {
+        title: "About",
+        to: "/about-us",
+        
+      
+    },
+    // {
+    //     title: "Pages",
+    //     classChange: "sub-menu-down",
+        
+    //     content: [
+    //         { title: "About Us", to: "/about-us" },
+    //         { title: "Appointment", to: "/appointment" },
+    //         { title: "Pricing Table", to: "/pricing-table" },
+    //         { title: "Faq's", to: "/faqs" },
+    //     ],
+    // },
     {
-        title: "Pages",
+        title: "Our Doctors",
         classChange: "sub-menu-down",
         
         content: [
-            { title: "About Us", to: "/about-us" },
-            { title: "About Us 2", to: "/about-us-2" },
-            { title: "Appointment", to: "/appointment" },
-            { title: "Pricing Table", to: "/pricing-table" },
-            { title: "Testimonial", to: "/testimonial" },
-            { title: "Faq's", to: "/faqs" },
-            { title: "Error 404", to: "/error-404" },
+            { title: "Dr Huma Sheikh", to: "/dr-huma" },
+            { title: "Dr Samira Masoud", to: "/dr-samira" },
         ],
     },
-    {
-        title: "Team",
-        classChange: "sub-menu-down",
+    // {
+    //     title: "Services",
+    //     classChange: "sub-menu-down",
         
-        content: [
-            { title: "Team", to: "/team" },
-            { title: "Team Detail", to: "/team-detail" },
-        ],
-    },
+    //     content: [
+    //         // { title: "All Services", to: "/services" },
+    //         { title: "Comprehensive Services", to: "/services-2" },
+    //     ],
+    // },
     {
         title: "Services",
-        classChange: "sub-menu-down",
-        
-        content: [
-            { title: "Services", to: "/services" },
-            { title: "Services 2", to: "/services-2" },
-            { title: "Service Detail", to: "/service-detail" },
-            { title: "Service Detail 2", to: "/service-detail-2" },
-        ],
+        to: "/services",
     },
-    {
-        title: "Blogs",
-        classChange: "sub-menu-down",
-        
-        content: [
-            { title: "Blog Grid", to: "/blog-grid" },
-            { title: "Blog List Sidebar", to: "/blog-list-sidebar" },
-            { title: "Blog Details", to: "/blog-details" },
-        ],
-    },
+
     { 
         title: "Contact Us", 
         to: "/contact-us" 
+    },
+    {
+        title: "FAQs",
+        to: "/faqs",
     },
 ]
 
@@ -103,8 +97,8 @@ export const compareswiperdata = [
 ]
 // contactmap 
 export const mapdata = [
-    { delay: '0.6s', title: 'United States', flag: IMAGES.unitedstate, },
-    { delay: '0.8s', title: 'Canada', flag: IMAGES.cananda, },
+    { delay: '0.6s', title: 'United Kingdom', flag: IMAGES.unitedstate, },
+    // { delay: '0.8s', title: 'Canada', flag: IMAGES.cananda, },
 ]
 // highlyteam 
 export const swiperteamdata = [
@@ -125,17 +119,23 @@ export const newsdata = [
 ]
 // question  
 export const accordiondata2 = [
-    { key: "0", title: 'How much do you charge for pedicure ?' },
-    { key: "1", title: 'What types of treatments do you offer?' },
-    { key: "2", title: 'How do i book my appointment ?' },
-    { key: "3", title: 'Can i cancel my appointment ?' },
+    { key: "0", title: 'How do I book a virtual appointment?' },
+    { key: "1", title: 'What services are available through virtual consultations?' },
+    { key: "2", title: 'How much does a virtual consultation cost?' },
+    { key: "3", title: 'Can I get prescriptions through virtual appointments?' },
+    { key: "4", title: 'What technology do I need for a virtual consultation?' },
+    { key: "5", title: 'How long does a virtual appointment take?' },
+    { key: "6", title: 'Can I book same-day appointments?' },
+    { key: "7", title: 'What if I need to see a doctor in person?' },
+    { key: "8", title: 'How do I cancel or reschedule my appointment?' },
+    { key: "9", title: 'Is my medical information secure during virtual consultations?' },
 ]
 export const accordionnavdata = [
-    { i: 1, id: 'pills-tab1', target: '#pills-target-tabs1', title: 'Dental Care', },
-    { i: 2, id: 'pills-tab2', target: '#pills-target-tabs2', title: 'Cosmetic Dentistry', },
-    { i: 3, id: 'pills-tab3', target: '#pills-target-tabs3', title: 'Dental Technology', },
-    { i: 4, id: 'pills-tab4', target: '#pills-target-tabs4', title: 'Smile Care', },
-    { i: 5, id: 'pills-tab5', target: '#pills-target-tabs5', title: 'Teeth Whitening', },
+    { i: 1, id: 'pills-tab1', target: '#pills-target-tabs1', title: 'Virtual Appointments', },
+    { i: 2, id: 'pills-tab2', target: '#pills-target-tabs2', title: 'GP Services', },
+    { i: 3, id: 'pills-tab3', target: '#pills-target-tabs3', title: 'Booking & Scheduling', },
+    { i: 4, id: 'pills-tab4', target: '#pills-target-tabs4', title: 'Prescriptions & Treatment', },
+    { i: 5, id: 'pills-tab5', target: '#pills-target-tabs5', title: 'Technical Support', },
 ]
 // servicedata 
 export const servicedata = [
@@ -168,21 +168,21 @@ export const testiswiperdata = [
 ]
 // wecare 
 export const counterdata = [
-    { title: "Happy Patients", count: <CountUp end={45} duration={5} />, span: 'k', columnstand1: 'bg-color1', columnstand2: 'text-orange', delay: '0.6s', },
-    { title: "Specialists", count: <CountUp end={200} duration={5} />, span: '+', columnstand1: 'bg-color2', columnstand2: 'text-green', delay: '0.8s', },
-    { title: "Winning Awards", count: <CountUp end={150} duration={5} />, span: '+', columnstand1: 'bg-color3', columnstand2: 'text-primary', delay: '1.0s', },
+    { title: "satisfied Patients", count: <CountUp end={500} duration={5} />, span: '+', columnstand1: 'bg-color1', columnstand2: 'text-orange', delay: '0.6s', },
+    { title: "Qualified General Practioner", count: <CountUp end={2} duration={5} />, span: '+', columnstand1: 'bg-color2', columnstand2: 'text-green', delay: '0.8s', },
+    { title: "Years Combined Experience", count: <CountUp end={20} duration={5} />, span: '+', columnstand1: 'bg-color3', columnstand2: 'text-primary', delay: '1.0s', },
 ]
 // wecare2 
 export const wecaredata2 = [
-    { id: 1, title: 'Medical Service', delay: '0.2s', icon: <i className="flaticon-medical-symbol" />, },
-    { id: 2, title: '24/7 Medicines', delay: '0.4s', icon: <i className="flaticon-drugs" />, },
-    { id: 3, title: 'Best Doctor', delay: '0.6s', icon: <i className="flaticon-doctor" />, },
+    { id: 1, title: 'Medical Service', p:"Your Doctor offers comprehensive GP services, from routine check-ups to chronic disease management, ensuring you and your family receive the best possible care.", delay: '0.2s', icon: <i className="flaticon-medical-symbol" />, },
+    { id: 2, title: 'Accessible Care', p:"We make healthcare simple and accessible with same-day appointments, easy online booking, and personalized treatment plans tailored to your needs", delay: '0.4s', icon: <i className="flaticon-drugs" />, },
+    { id: 3, title: 'Best Doctor', p:"Our team of qualified and compassionate doctors provides patient-centered care, giving you confidence that your health is in safe hands.", delay: '0.6s', icon: <i className="flaticon-doctor" />, },
 ]
 // whychoose 
 export const accordiondata = [
-    { key: "0", image: IMAGES.blogsmall1, delay: '0.4s', title: 'Expertise in Dental Industry', },
-    { key: "1", image: IMAGES.blogsmall2, delay: '0.6s', title: 'Patient-Centered Care', },
-    { key: "2", image: IMAGES.blogsmall3, delay: '0.8s', title: 'Flexible Appointment Scheduling', },
+    { key: "0", image: IMAGES.blogsmall1, delay: '0.4s', title: 'Comprehensive Care',p:"We go beyond just treating symptoms our GP services include preventive check-ups, vaccinations, chronic disease management, and family medicine. Whether it’s a minor illness or long-term care, we ensure every patient receives the right attention for lasting health", },
+    { key: "1", image: IMAGES.blogsmall2, delay: '0.6s', title: 'Experienced Doctors',p:"Our team of highly qualified and compassionate GPs bring years of medical expertise and patient care experience. At Your Doctor, you are not just another appointment we listen carefully, provide clear guidance, and make your health our top priority", },
+    { key: "2", image: IMAGES.blogsmall3, delay: '0.8s', title: 'Accessible & Convenient',p:"We believe healthcare should be simple and stress-free. With same-day appointments, online booking options, and modern facilities, Your Doctor makes quality medical care available when and where you need it most", },
 ]
 // faqdata 
 export const pricingplandata = [
@@ -224,6 +224,61 @@ export const pricingplandata = [
             <li>X-rays</li>
             <li>Fluoride treatments</li>
             <li>Dental sealants</li>
+        </ul>,
+    },
+]
+
+export const custompricingplandata = [
+    {
+        vertical: 'PROFESSIONAL', image: IMAGES.drhuma, title: 'Skin Concerns', month: '$49', year: '$550',
+        feature: <ul className="pricingtable-features">
+            <li>Acne and adult acne treatment</li>
+            <li>Rashes, eczema, dermatitis care</li>
+            <li>Mole and lesion checks</li>
+            <li>Prescription-strength treatments</li>
+            <li>Psoriasis support</li>
+        </ul>,
+    },
+    {
+        vertical: 'FAMILY PACK', image: IMAGES.drhuma, title: 'MSK Issues', month: '$99', year: '$999',
+        feature: <ul className="pricingtable-features">
+            <li>Back, neck & joint pain</li>
+            <li>Sports injuries & sprains</li>
+            <li>Arthritis and inflammation</li>
+            <li>Imaging & physio referrals</li>
+            <li>Joint injections (where available)</li>
+            <li>Available depending on clinic equipment.</li>
+        </ul>,
+    },
+    {
+        vertical: 'PROFESSIONAL', image: IMAGES.drhuma, title: 'Diabetes Care', month: '$49', year: '$1049',
+        feature: <ul className="pricingtable-features">
+            <li>Type 2 diabetes screening</li>
+            <li>Blood sugar & HbA1c testing</li>
+            <li>Lifestyle & medication advice</li>
+            <li>Nutrition advice</li>
+            <li>Regular checkups</li>
+        </ul>,
+    },
+    {
+        vertical: 'FAMILY PACK', image: IMAGES.drhuma, title: 'Weight Management', month: '$99', year: '$1099',
+        feature: <ul className="pricingtable-features">
+            <li>Medical assessment of weight-related concerns</li>
+            <li>Hormonal/metabolic screening</li>
+            <li>Lifestyle and nutrition coaching</li>
+            <li>Prescription weight-loss options (if appropriate)</li>
+            <li>Ongoing progress support</li>
+        </ul>,
+    },
+    {
+        vertical: 'PROFESSIONAL', image: IMAGES.drhuma, title: 'Birth Control & Sexual Health', month: '$49', year: '$1049',
+        feature: <ul className="pricingtable-features">
+            <li>Contraception advice & prescriptions</li>
+            <li>Coil/implant procedures</li>
+            <li>Emergency contraception</li>
+            <li>Sexual health screening</li>
+            <li>Fertility planning support</li>
+            <li>Some procedures may require in-person clinic availability.</li>
         </ul>,
     },
 ]
@@ -277,19 +332,55 @@ export const service2data = [
 // footer 
 export const footerdata = [
     {
-        title: 'Our Services', span1: 'Emergency Care', span2: 'Operation Theater', span3: 'Medical Checkup', span4: 'Diagnostic Center', span5: 'Outdoor Checkup',
-        link1: '/service-detail', link2: '/service-detail', link3: '/service-detail', link4: '/service-detail', link5: '/service-detail',
+        title: 'Our Services', 
+        span1: 'Musculoskeletal (MSK) Issues', 
+        span2: 'Skin Concerns', 
+        span3: 'Birth Control & Sexual Health', 
+        span4: 'Diabetes Care', 
+        span5: 'Weight Management',
+        link1: '/services#', 
+        link2: '/services', 
+        link3: '/services', 
+        link4: '/services', 
+        link5: '/services',
     },
     {
-        title: 'Useful Links', span1: 'Privacy Policy', span2: 'Terms & Conditions', span3: 'Contact Us', span4: 'Latest News', span5: 'Our Sitemap',
-        link1: '#', link2: '#', link3: '/contact-us', link4: '/blog-grid', link5: '#',
+        title: 'Our Doctors', 
+        span1: 'Dr Huma Sheikh', 
+        span2: 'Dr Samira Masoud', 
+        span3: '', 
+        span4: '', 
+        span5: '',
+        link1: '/dr-huma', 
+        link2: '/dr-samira', 
+        link3: '', 
+        link4: '', 
+        link5: '',
     },
     {
-        title: 'Our Stores', span1: 'New York', span2: 'London SF', span3: 'Edinburgh', span4: 'Los Angeles', span5: 'Las Vegas',
-        link1: '#', link2: '#', link3: '#', link4: '#', link5: '#',
+        title: 'Pages', 
+        span1: 'About Us', 
+        span2: 'Appointments', 
+        span3: 'Contact Us', 
+        span4: 'FAQs', 
+        span5: 'Pricing',
+        link1: '/about-us', 
+        link2: '/appointment', 
+        link3: '/contact-us', 
+        link4: '/faqs', 
+        link5: '/',
     },
     {
-        title: 'Quick Links', span1: 'About Us', span2: 'Our Services', span3: 'Our Team', span4: 'Appointments', span5: 'Contact Us',
-        link1: '/about-us', link2: '/services', link3: '/team', link4: '/appointment', link5: '/contact-us',
+        title: 'Legal & Support', 
+        span1: 'Privacy Policy', 
+        span2: 'Terms & Conditions', 
+        span3: 'Patient Rights', 
+        span4: 'Insurance Info', 
+        span5: 'Testimonials',
+        link1: '#', 
+        link2: '#', 
+        link3: '#', 
+        link4: '#', 
+        link5: '/testimonial',
     },
 ]

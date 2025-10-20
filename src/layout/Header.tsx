@@ -53,8 +53,8 @@ function Header({ columnstand } : Props) {
                         <div className="dz-topbar-inner d-flex justify-content-between align-items-center">
                             <div className="dz-topbar-left">
                                 <ul>
-                                    <li><Link href="tel:+11234567890"><i className="feather icon-phone-call text-primary" /> +11234567890</Link></li>
-                                    <li><Link href="mailto:info@example.com"><i className="feather icon-mail text-primary" /> info@example.com</Link></li>
+                                    <li><Link href="tel:+447956487764"><i className="feather icon-phone-call text-primary" /> +44 7956 487764</Link></li>
+                                    <li><Link href="mailto:yourdoctors.gp@gmail.com"><i className="feather icon-mail text-primary" />yourdoctors.gp@gmail.com</Link></li>
                                 </ul>
                             </div>
                             <div className="dz-topbar-right">
@@ -62,8 +62,8 @@ function Header({ columnstand } : Props) {
                                     <li> <Link href="https://www.linkedin.com/showcase/dexignzone" target="_blank"> <i className="fa-brands fa-linkedin" /> </Link> </li>
                                     <li> <Link href="https://www.instagram.com/dexignzone" target="_blank"> <i className="fa-brands fa-instagram" /> </Link>  </li>
                                     <li> <Link href="https://www.facebook.com/dexignzone" target="_blank"> <i className="fa-brands fa-facebook-f" /> </Link>  </li>
-                                    <li> <Link href="https://www.x.com/dexignzone" target="_blank"> <i className="fa-brands fa-x-twitter" /> </Link>  </li>
-                                    <li> <Link href="https://www.linkedin.com/@dexignzone" target="_blank"> <i className="fa-brands fa-youtube" /> </Link>  </li>
+                                    {/* <li> <Link href="https://www.x.com/dexignzone" target="_blank"> <i className="fa-brands fa-x-twitter" /> </Link>  </li> */}
+                                    {/* <li> <Link href="https://www.linkedin.com/@dexignzone" target="_blank"> <i className="fa-brands fa-youtube" /> </Link>  </li> */}
                                 </ul>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ function Header({ columnstand } : Props) {
                     <div className="main-bar clearfix">
                         <div className="container clearfix inner-bar text-white">
                             <div className="logo-header logo-dark">
-                                <Link href="/"><Image src={IMAGES.logowhite} alt="logo" /></Link>
+                                <Link href="/"><Image src={IMAGES.yourdoctorlogo} alt="logo" /></Link>
                             </div>
                             <button onClick={handleclick} className={`w3menu-toggler navicon ${show ? 'open' : ''}`} type="button" data-target="#W3Menu">
                                 <span></span>
@@ -144,6 +144,16 @@ function Header({ columnstand } : Props) {
                             <div className={`extra-nav ${scroll ? 'active' : ''}`}>
                                 <div className="extra-cell">
                                     <ul className="header-right">
+                                        <li className="nav-item">
+                                            <Link
+                                                href="https://wa.me/447956487764?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                                                className="btn btn-primary btn-hover1"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                Whatsapp A GP
+                                            </Link>
+                                        </li>
                                         <li className="nav-item">
                                             <Link href="/appointment" className="btn btn-primary btn-hover1">
                                                 Appointment

@@ -16,6 +16,7 @@ function Appointment() {
                 <section className="content-inner overlay-primary-gradient-light overlay-opacity-10" style={{ backgroundImage: `url(${IMAGES.bg4.src})` }}>
                     <div className="container">
                         <Wecare2 />
+                        <div className="bg-cyan-500 p-4 text-white">Test Cyan</div>
                     </div>
                 </section>
                 <section className="content-wrapper style-12 bg-secondary background-blend-burn" style={{ backgroundImage: `url(${IMAGES.bg1.src})` }}>

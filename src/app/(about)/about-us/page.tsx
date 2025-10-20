@@ -2,7 +2,7 @@
 import { Fragment } from "react";
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
-import BestDentist from "@/component/BestDentist";
+import BestDentist from "@/component/DrHuma";
 import ClientSwiper from "@/component/ClientSwiper";
 import MapForm from "@/component/MapForm";
 import Pagebanner from "@/component/Pagebanner";
@@ -36,9 +36,9 @@ function AboutUsPage() {
                         <BestDentist />
                     </div>
                 </section>
-                <section className="content-inner gradient-primary overflow-hidden">
+                {/* <section className="content-inner gradient-primary overflow-hidden">
                     <TestiSwiper />
-                </section>
+                </section> */}
                 <section className="content-inner-2">
                     <div className="container">
                         <MapForm />
@@ -47,7 +47,7 @@ function AboutUsPage() {
                 <section className="content-inner">
                     <div className="container">
                         <div className="row align-items-center">
-                            <ClientSwiper />
+                            {/* <ClientSwiper /> */}
                         </div>
                     </div>
                 </section>

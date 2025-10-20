@@ -10,28 +10,30 @@ import bg9 from '../../public/assets/images/background/bg9.webp'
 import logo from '../../public/assets/images/logo.svg'
 import logo1 from '../../public/assets/images/logo/logo1.png'
 import google from '../../public/assets/images/google.svg'
-import logowhite from '../../public/assets/images/logo-white.svg'
-import smallavatar1 from '../../public/assets/images/avatar/small/avatar1.webp';
-import smallavatar2 from '../../public/assets/images/avatar/small/avatar2.webp';
-import smallavatar3 from '../../public/assets/images/avatar/small/avatar3.webp';
-import smallavatar4 from '../../public/assets/images/avatar/small/avatar4.webp';
+import logowhite from '../../public/assets/images/logoyour.png'
+import yourdoctorlogo from '../../public/assets/images/yourdoctorlogo-green.png'
+import smallavatar1 from '../../public/assets/images/avatar/small/Homepage 5 star image 50x50.png';
+import smallavatar2 from '../../public/assets/images/avatar/small/Homepage 50x50 patient 1 .png';
+import smallavatar3 from '../../public/assets/images/avatar/small/Homepage 50x50 patient 2.png';
+import smallavatar4 from '../../public/assets/images/avatar/small/Homepage 50x50 patient 3.png';
 import smallavatar7 from '../../public/assets/images/avatar/small/avatar7.webp';
 import smallavatar8 from '../../public/assets/images/avatar/small/avatar8.webp';
-import herobanner1 from '../../public/assets/images/hero-banner/img1.webp'
+import herobanner1 from '../../public/assets/images/hero-banner/herobanner-1.png'
 import herobanner2 from '../../public/assets/images/hero-banner/img2.webp'
-import herobanner3 from '../../public/assets/images/hero-banner/img3.webp'
+import herobanner3 from '../../public/assets/images/hero-banner/bg10.png'
 import herobanner4 from '../../public/assets/images/hero-banner/img4.webp'
-import herobanner5 from '../../public/assets/images/hero-banner/img5.webp'
-import herobanner6 from '../../public/assets/images/hero-banner/img6.webp'
+import herobanner5 from '../../public/assets/images/hero-banner/Homepage 50x50 patient 1 .png'
+import herobanner6 from '../../public/assets/images/hero-banner/Homepage 5 star image 50x50 - Copy.png'
 import about1 from '../../public/assets/images/about/img1.webp'
-import about2 from '../../public/assets/images/about/img2.webp'
+import DrHuma from '../../public/assets/images/about/dr-humasheikh.png'
+import DrThree from '../../public/assets/images/hero-banner/herobanner-1.png'
 import about3 from '../../public/assets/images/about/img3.webp'
-import about5 from '../../public/assets/images/about/img5.webp'
-import about6 from '../../public/assets/images/about/img6.webp'
-import about7 from '../../public/assets/images/about/img7.webp'
-import about8 from '../../public/assets/images/about/img8.webp'
-import about9 from '../../public/assets/images/about/img9.webp'
-import about10 from '../../public/assets/images/about/img10.webp'
+import about5 from '../../public/assets/images/about/Homepage contact us 700x850.png'
+import about6 from '../../public/assets/images/about/bg3.png'
+import about7 from '../../public/assets/images/about/musculoskeletal.jpg'
+import about8 from '../../public/assets/images/about/Homepage why choose us image 600x600.png'
+import about9 from '../../public/assets/images/about/skin-concerns.jpg'
+import about10 from '../../public/assets/images/about/birth-control.jpg'
 import about11 from '../../public/assets/images/about/img11.webp'
 import about12 from '../../public/assets/images/about/img12.webp'
 import about13 from '../../public/assets/images/about/img13.webp'
@@ -56,9 +58,9 @@ import service2 from '../../public/assets/images/services/img2.webp'
 import service3 from '../../public/assets/images/services/img3.webp'
 import service4 from '../../public/assets/images/services/img4.webp'
 import bgcircle from '../../public/assets/images/bg-circle.svg'
-import blogsmall1 from '../../public/assets/images/blog/small/img1.webp'
-import blogsmall2 from '../../public/assets/images/blog/small/img2.webp'
-import blogsmall3 from '../../public/assets/images/blog/small/img3.webp'
+import blogsmall1 from '../../public/assets/images/blog/small/Homepage patient review image  320x380 3.png'
+import blogsmall2 from '../../public/assets/images/blog/small/Homepage patient review image  320x380 4.png'
+import blogsmall3 from '../../public/assets/images/blog/small/Homepage patient review image  320x380 1.png'
 import sign from '../../public/assets/images/sign.svg'
 import pricetable1 from '../../public/assets/images/pricetable/img1.webp'
 import pricetable2 from '../../public/assets/images/pricetable/img2.webp'
@@ -73,7 +75,7 @@ import bloggrid6 from '../../public/assets/images/blog/grid/pic6.webp'
 import testimonial1 from '../../public/assets/images/testimonial/img1.webp'
 import testimonial2 from '../../public/assets/images/testimonial/img2.webp'
 import testimonial3 from '../../public/assets/images/testimonial/img3.png'
-import bnr1 from '../../public/assets/images/banner/bnr1.webp'
+import bnr1 from '../../public/assets/images/banner/bg10.png'
 import logomiddle1 from '../../public/assets/images/logo/middle/logo1.png'
 import logomiddle2 from '../../public/assets/images/logo/middle/logo2.png'
 import logomiddle3 from '../../public/assets/images/logo/middle/logo3.png'
@@ -104,6 +106,15 @@ import demohome1 from '../../public/assets/images/demo/home1.jpg';
 import demohome2 from '../../public/assets/images/demo/home2.jpg';
 import demohome3 from '../../public/assets/images/demo/home3.jpg';
 import bg2png from '../../public/assets/images/background/bg2.png'
+import drhuma from '../../public/assets/images/about/dr-huma.png'
+import drsamira from '../../public/assets/images/about/dr-smaira.png'
+import meettheteam from '../../public/assets/images/about/meet-the-team.png'
+import birthcontrol from '../../public/assets/images/about/birth-control.jpg'
+import skinconcern from '../../public/assets/images/about/skin-concerns.jpg'
+import obesity from '../../public/assets/images/about/obesity.jpg'
+import musculoskeletal from '../../public/assets/images/about/musculoskeletal.jpg'
+import diabetescare from '../../public/assets/images/about/diabetes-care.jpg'
+import servicebanner from '../../public/assets/images/about/service.png'
 
 
 export const IMAGES : any = {
@@ -118,6 +129,7 @@ export const IMAGES : any = {
     bg9: bg9,
     logo: logo,
     logowhite: logowhite,
+    yourdoctorlogo: yourdoctorlogo,
     google: google,
     logo1: logo1,
     smallavatar1: smallavatar1,
@@ -133,7 +145,9 @@ export const IMAGES : any = {
     herobanner5: herobanner5,
     herobanner6: herobanner6,
     about1: about1,
-    about2: about2,
+    DrHuma: DrHuma,
+    DrThree: DrThree,
+    drsamira: drsamira,
     about3: about3,
     about5: about5,
     about6: about6,
@@ -160,10 +174,11 @@ export const IMAGES : any = {
     teamlarge5: teamlarge5,
     beforecomapare1: beforecomapare1,
     aftercomapare1: aftercomapare1,
-    service1: service1,
-    service2: service2,
-    service3: service3,
-    service4: service4,
+    
+    // service1: service1,
+    // service2: service2,
+    // service3: service3,
+    // service4: service4,
     bgcircle: bgcircle,
     blogsmall1: blogsmall1,
     blogsmall2: blogsmall2,
@@ -213,6 +228,14 @@ export const IMAGES : any = {
     demohome2: demohome2,
     demohome3: demohome3,
     bg2png: bg2png,
+    drhuma: DrHuma,
+    meettheteam: meettheteam,
+    birthcontrol: birthcontrol,
+    diabetescare: diabetescare,
+    musculoskeletal: musculoskeletal,
+    skinconcern: skinconcern,
+    obesity: obesity,
+    servicebanner: servicebanner,
 }
 export const SVGICONS = {
     smile: `<svg width="207" height="44" viewBox="0 0 207 44" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,121 +1,222 @@
 "use client"
 import { IMAGES } from "../constant/theme";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Dropdown } from "react-bootstrap";
 import Image from "next/image";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { useEmailService } from "@/constant/useEmailService";
-
+import { useOppointEmail } from "@/constant/useOppointEmail";
 
 function AppointmentData() {
-    const [startDate, setStartDate] = useState<Date>(new Date());
-    const [selectCat, setSelectCat] = useState("Department");
-    const [selectCatt, setSelectCatt] = useState("Doctor Name");
+  const [startDate, setStartDate] = useState<Date>(new Date());
+  const [selectCat, setSelectCat] = useState("Select Service");
+  const [selectCatt, setSelectCatt] = useState("Select Doctor");
+  const [statusMessage, setStatusMessage] = useState<string | null>(null);
+  const [statusType, setStatusType] = useState<"success" | "error" | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-    //mail
-    const form = useRef<HTMLFormElement | null>(null);
-    const { sendEmail } = useEmailService();
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        if (!form.current) return;
-        const result = await sendEmail(form.current);
-        if (result.success) {
-            console.log('SUCCESS!', result.message);
-        } else {
-            console.error('FAILED...', result.message);
+  const form = useRef<HTMLFormElement | null>(null);
+  const { sendEmail } = useOppointEmail();
+
+  // 👇 Auto hide toast after 4 seconds
+  useEffect(() => {
+    if (statusMessage) {
+      const timer = setTimeout(() => {
+        setStatusMessage(null);
+        setStatusType(null);
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [statusMessage]);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!form.current) return;
+
+    setIsSubmitting(true);
+    setStatusMessage(null);
+
+    const result = await sendEmail(form.current);
+    setIsSubmitting(false);
+
+    if (result.success) {
+      setStatusMessage("Your appointment request has been sent successfully!");
+      setStatusType("success");
+      form.current.reset();
+    } else {
+      setStatusMessage("Failed to send appointment request. Please try again later.");
+      setStatusType("error");
+    }
+  };
+
+  return (
+    <>
+      {/* ✅ Popup Toast */}
+      {statusMessage && (
+        <div
+  className={`fixed top-5 right-5 z-50 px-4 py-3 rounded shadow-lg text-white transition-all duration-300 ${
+    statusType === "success" ? "shadow" : "shadow"
+  }`}
+  style={{
+    backgroundColor: statusType === "success" ? "#00BCD4" : "#DC3545", // cyan for success, red for error
+  }}
+>
+  {statusMessage}
+</div>
+      )}
+
+      <style jsx>{`
+        @keyframes fadeInOut {
+          0% { opacity: 0; transform: translateY(-10px); }
+          10%, 90% { opacity: 1; transform: translateY(0); }
+          100% { opacity: 0; transform: translateY(-10px); }
         }
-    };	
-    return (
-        <>
-            <div className="row">
-                <div className="col-lg-8">
-                    <div className="content-info">
-                        <div className="section-head style-3 m-b40">
-                            <h2 className="title text-white m-b0 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">Make An <span className="text-yellow">Appointment</span></h2>
-                        </div>
-                        <div className="form-wrapper">
-                            <div className="form-body">
-                                <form ref={form} onSubmit={handleSubmit} className="dzForm" method="POST">
-                                    <input type="hidden" className="form-control" name="dzToDo" value="Appointment" />
-                                    <input type="hidden" className="form-control" name="reCaptchaEnable" value="0" />
-                                    <div className="dzFormMsg"></div>
-                                    <div className="row g-3">
-                                        <div className="col-xl-4 col-sm-6 m-b10 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.8s">
-                                            <div className="form-floating floating-outline input-light">
-                                                <input name="dzName" type="text" className="form-control" id="inputYourName" placeholder="Your Name" />
-                                                <label htmlFor="inputYourName">Your Name</label>
-                                                <span className="input-group-text"><i className="feather icon-user" /></span>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-sm-6 m-b10 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">
-                                            <div className="form-floating floating-outline input-light">
-                                                <input name="dzEmail" type="email" className="form-control" id="inputYourEmail" placeholder="Your Email" />
-                                                <label htmlFor="inputYourEmail">Your Email</label>
-                                                <span className="input-group-text"><i className="feather icon-mail" /></span>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-sm-6 m-b10 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.8s">
-                                            
-                                            <div className="form-floating floating-outline input-light base-calender">
-                                                <DatePicker className="form-control" selected={startDate}                                                    
-                                                    onChange={(date: Date | null) => {
-                                                        if (date) {
-                                                            setStartDate(date);
-                                                        }
-                                                    }}
-                                                    placeholderText="Date Time"
-                                                    dateFormat="Pp"
-                                                />
-                                                
-                                                <span className="input-group-text"><i className="feather icon-calendar"/></span>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-sm-6 m-b10 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.8s">
-                                            <div className="form-floating floating-outline input-light">
-                                                <Dropdown className="bs-select form-control">
-                                                    <Dropdown.Toggle as="div" className="p-1"> {selectCat} </Dropdown.Toggle>
-                                                    <Dropdown.Menu>
-                                                        <Dropdown.Item onClick={() => setSelectCat("Department")}>Department</Dropdown.Item>
-                                                        <Dropdown.Item onClick={() => setSelectCat("Angioplasty")}>Angioplasty</Dropdown.Item>
-                                                        <Dropdown.Item onClick={() => setSelectCat("Cardiology")}>Cardiology</Dropdown.Item>
-                                                        <Dropdown.Item onClick={() => setSelectCat("Dental")}>Dental</Dropdown.Item>
-                                                        <Dropdown.Item onClick={() => setSelectCat("Eye Care")}>Eye Care</Dropdown.Item>
-                                                    </Dropdown.Menu>
-                                                </Dropdown>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-sm-6 m-b10 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="0.8s">
-                                            <div className="form-floating floating-outline input-light">
-                                                <Dropdown className="form-control bs-select">
-                                                    <Dropdown.Toggle as="div" className="p-1"> {selectCatt} </Dropdown.Toggle>
-                                                    <Dropdown.Menu>
-                                                        <Dropdown.Item onClick={() => setSelectCatt("Doctor Name")}>Doctor Name</Dropdown.Item>
-                                                        <Dropdown.Item onClick={() => setSelectCatt("Nashid Martines")}>Nashid Martines</Dropdown.Item>
-                                                        <Dropdown.Item onClick={() => setSelectCatt("Kenneth Fong")}>Kenneth Fong</Dropdown.Item>
-                                                    </Dropdown.Menu>
-                                                </Dropdown>
-                                            </div>
-                                        </div>
-                                        <div className="col-xl-4 col-sm-6 m-b10 wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="0.8s">
-                                            <button type="submit" name="submit" value="submit" className="btn btn-lg btn-icon btn-white shadow-sm w-100">
-                                                <span className="w-100">Appointment</span>
-                                                <span className="right-icon bg-primary"><i className="feather icon-arrow-right" /></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+      `}</style>
+
+      <div className="row">
+        <div className="col-lg-8">
+          <div className="content-info">
+            <div className="section-head style-3 m-b40">
+              <h2 className="title text-white m-b0 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
+                Make An <span className="text-yellow">Appointment</span>
+              </h2>
+            </div>
+
+            <div className="form-wrapper">
+              <div className="form-body">
+                <form ref={form} onSubmit={handleSubmit} className="dzForm" method="POST">
+                  {/* Hidden inputs for EmailJS template */}
+                  <input type="hidden" name="appointment_date" value={startDate.toLocaleString()} />
+                  <input type="hidden" name="service" value={selectCat} />
+                  <input type="hidden" name="doctor" value={selectCatt} />
+
+                  <div className="row g-3">
+                    {/* Name */}
+                    <div className="col-xl-4 col-sm-6 m-b10">
+                      <div className="form-floating floating-outline input-light">
+                        <input
+                          name="name"
+                          type="text"
+                          className="form-control"
+                          id="inputYourName"
+                          placeholder="Your Name"
+                          required
+                        />
+                        <label htmlFor="inputYourName">Your Name</label>
+                        <span className="input-group-text"><i className="feather icon-user" /></span>
+                      </div>
                     </div>
-                </div >
-                <div className="col-lg-4 align-self-end">
-                    <div className="content-media wow fadeInUp" data-wow-delay="1.0s" data-wow-duration="0.8s">
-                        <Image src={IMAGES.about1} alt="about1" />
+
+                    {/* Email */}
+                    <div className="col-xl-4 col-sm-6 m-b10">
+                      <div className="form-floating floating-outline input-light">
+                        <input
+                          name="email"
+                          type="email"
+                          className="form-control"
+                          id="inputYourEmail"
+                          placeholder="Your Email"
+                          required
+                        />
+                        <label htmlFor="inputYourEmail">Your Email</label>
+                        <span className="input-group-text"><i className="feather icon-mail" /></span>
+                      </div>
                     </div>
-                </div>
-            </div >
-        </>
-    )
+
+                    {/* Date */}
+                    <div className="col-xl-4 col-sm-6 m-b10">
+                      <div className="form-floating floating-outline input-light base-calender">
+                        <DatePicker
+                          className="form-control"
+                          selected={startDate}
+                          onChange={(date: Date | null) => date && setStartDate(date)}
+                          placeholderText="Select Date & Time"
+                          dateFormat="Pp"
+                        />
+                        <span className="input-group-text"><i className="feather icon-calendar" /></span>
+                      </div>
+                    </div>
+
+                    {/* Service */}
+                    <div className="col-xl-4 col-sm-6 m-b10">
+                      <div className="form-floating floating-outline input-light">
+                        <Dropdown className="bs-select form-control">
+                          <Dropdown.Toggle as="div" className="p-1">
+                            {selectCat}
+                          </Dropdown.Toggle>
+                          <Dropdown.Menu>
+                            <Dropdown.Item onClick={() => setSelectCat("Skin Concerns")}>Skin Concerns</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectCat("Musculoskeletal (MSK) Issues")}>Musculoskeletal (MSK) Issues</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectCat("Diabetes Care")}>Diabetes Care</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectCat("Obesity & Weight Management")}>Obesity & Weight Management</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectCat("Birth Control & Sexual Health")}>Birth Control & Sexual Health</Dropdown.Item>
+                          </Dropdown.Menu>
+                        </Dropdown>
+                      </div>
+                    </div>
+
+                    {/* Doctor */}
+                    <div className="col-xl-4 col-sm-6 m-b10">
+                      <div className="form-floating floating-outline input-light">
+                        <Dropdown className="form-control bs-select">
+                          <Dropdown.Toggle as="div" className="p-1">
+                            {selectCatt}
+                          </Dropdown.Toggle>
+                          <Dropdown.Menu>
+                            <Dropdown.Item onClick={() => setSelectCatt("Dr Huma Shaikh")}>Dr Huma Shaikh</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectCatt("Dr Samira Masoud")}>Dr Samira Masoud</Dropdown.Item>
+                          </Dropdown.Menu>
+                        </Dropdown>
+                      </div>
+                    </div>
+                    {/* Submit */}
+                    <div className="col-xl-4 col-sm-6 m-b10">
+                      <button
+                        type="submit"
+                        name="submit"
+                        value="submit"
+                        className="btn btn-lg btn-icon btn-white shadow-lg w-100"
+                        disabled={isSubmitting}
+                      >
+                        <span className="w-100">
+                          {isSubmitting ? "Sending..." : "Appointment"}
+                        </span>
+                        <span className="right-icon bg-primary">
+                          <i className="feather icon-arrow-right" />
+                        </span>
+                      </button>
+                    </div>
+
+                    {/* Message */}
+                    <div className="col-xl-8 col-sm-12 m-b10">
+                      <div className="form-floating floating-outline input-light">
+                        <textarea
+                          name="message"
+                          className="form-control"
+                          placeholder="Additional Message"
+                          rows={3}
+                        ></textarea>
+                        <label>Additional Message</label>
+                      </div>
+                    </div>
+
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Image */}
+        <div className="col-lg-4 align-self-end">
+          <div className="content-media wow fadeInUp" data-wow-delay="1.0s" data-wow-duration="0.8s">
+            <Image src={IMAGES.DrThree} alt="about1" />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
+
 export default AppointmentData;

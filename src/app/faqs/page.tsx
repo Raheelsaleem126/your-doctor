@@ -20,13 +20,13 @@ function Faqs() {
                     </div>
                 </section>
                 <section className="content-inner">
-                    <div className="container">
+                    {/* <div className="container">
                         <div className="section-head style-2 m-b30 text-center wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
                             <h2 className="title">Flexible Pricing Plans</h2>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                         </div>
                         <Faqdata />
-                    </div>
+                    </div> */}
                 </section>
             </main>
             <Footer />            

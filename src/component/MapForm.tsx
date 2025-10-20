@@ -20,44 +20,129 @@ function MapForm() {
         <>
             <div className="row">
                 <div className="col-xl-7 col-lg-6 m-b30 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.8s">
-                    <div className="map-wrapper style-1">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28891.193971348785!2d75.8546432!3d25.1559936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1719221707984!5m2!1sen!2sin&zoomcontrol=false" 
-                            width="600" height="450" style={{ border: '0', }} 
-                            allowFullScreen 
-                            loading="lazy" 
-                            referrerPolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                        <div className="item1">
-                            <div className="info-widget style-16">
-                                <div className="row g-xl-5 g-4">
-                                    <div className="col-xl-6 col-lg-12 col-md-6">
-                                        <div className="icon-bx-wraper style-1 align-items-center">
-                                            <div className="icon-bx bg-primary">
-                                                <span className="icon-cell">
-                                                    <i className="feather icon-clock" />
-                                                </span>
-                                            </div>
-                                            <div className="icon-content">
-                                                <h5 className="dz-title fw-semibold">Working Hours:</h5>
-                                                <p>Mon-Thu: 8:00am-5:00pm<br /> Fri: 8:00am-1:00pm</p>
-                                            </div>
-                                        </div>
+                    <div className="virtual-consultation-wrapper" style={{
+                        background: 'linear-gradient(135deg, #00d4aa 0%, #00a8cc 100%)',
+                        borderRadius: '20px',
+                        padding: '25px',
+                        color: 'white',
+                        position: 'relative',
+                        overflow: 'hidden'
+                    }}>
+                        <div className="section-head style-1 m-b20">
+                            <h3 className="title text-white mb-2" style={{ fontSize: '1.3rem' }}>Virtual Healthcare Services</h3>
+                            <p className="text-white-50 mb-3" style={{ fontSize: '0.85rem' }}>Experience convenient, professional healthcare from the comfort of your home</p>
+                        </div>
+                        
+                        <div className="row g-3">
+                            <div className="col-md-6">
+                                <div className="virtual-feature" style={{
+                                    backgroundColor: 'rgba(255,255,255,0.1)',
+                                    padding: '15px',
+                                    borderRadius: '10px',
+                                    backdropFilter: 'blur(10px)',
+                                    border: '1px solid rgba(255,255,255,0.2)'
+                                }}>
+                                    <div className="icon-bx mb-2" style={{
+                                        width: '40px',
+                                        height: '40px',
+                                        backgroundColor: 'rgba(255,255,255,0.2)',
+                                        borderRadius: '50%',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        fontSize: '16px'
+                                    }}>
+                                        <i className="fa fa-video-camera"></i>
                                     </div>
-                                    <div className="col-xl-6 col-lg-12 col-md-6">
-                                        <div className="icon-bx-wraper style-1 align-items-center">
-                                            <div className="icon-bx bg-secondary">
-                                                <span className="icon-cell">
-                                                    <i className="feather icon-map-pin" />
-                                                </span>
-                                            </div>
-                                            <div className="icon-content">
-                                                <h5 className="dz-title fw-semibold">Office Address:</h5>
-                                                <p>764 15768 Delmer Shoals, <br /> Eliasport, FL 04331-6195</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <h6 className="text-white mb-1" style={{ fontSize: '0.9rem' }}>Video Consultations</h6>
+                                    <p className="text-white-50 mb-0" style={{ fontSize: '0.75rem' }}>Secure video calls with our experienced doctors</p>
                                 </div>
                             </div>
+                            
+                            <div className="col-md-6">
+                                <div className="virtual-feature" style={{
+                                    backgroundColor: 'rgba(255,255,255,0.1)',
+                                    padding: '15px',
+                                    borderRadius: '10px',
+                                    backdropFilter: 'blur(10px)',
+                                    border: '1px solid rgba(255,255,255,0.2)'
+                                }}>
+                                    <div className="icon-bx mb-2" style={{
+                                        width: '40px',
+                                        height: '40px',
+                                        backgroundColor: 'rgba(255,255,255,0.2)',
+                                        borderRadius: '50%',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        fontSize: '16px'
+                                    }}>
+                                        <i className="fa fa-clock"></i>
+                                    </div>
+                                    <h6 className="text-white mb-1" style={{ fontSize: '0.9rem' }}>Flexible Scheduling</h6>
+                                    <p className="text-white-50 mb-0" style={{ fontSize: '0.75rem' }}>Book appointments that fit your schedule</p>
+                                </div>
+                            </div>
+                            
+                            <div className="col-md-6">
+                                <div className="virtual-feature" style={{
+                                    backgroundColor: 'rgba(255,255,255,0.1)',
+                                    padding: '15px',
+                                    borderRadius: '10px',
+                                    backdropFilter: 'blur(10px)',
+                                    border: '1px solid rgba(255,255,255,0.2)'
+                                }}>
+                                    <div className="icon-bx mb-2" style={{
+                                        width: '40px',
+                                        height: '40px',
+                                        backgroundColor: 'rgba(255,255,255,0.2)',
+                                        borderRadius: '50%',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        fontSize: '16px'
+                                    }}>
+                                        <i className="fa fa-shield-alt"></i>
+                                    </div>
+                                    <h6 className="text-white mb-1" style={{ fontSize: '0.9rem' }}>Secure & Private</h6>
+                                    <p className="text-white-50 mb-0" style={{ fontSize: '0.75rem' }}>HIPAA-compliant consultations for your privacy</p>
+                                </div>
+                            </div>
+                            
+                            <div className="col-md-6">
+                                <div className="virtual-feature" style={{
+                                    backgroundColor: 'rgba(255,255,255,0.1)',
+                                    padding: '15px',
+                                    borderRadius: '10px',
+                                    backdropFilter: 'blur(10px)',
+                                    border: '1px solid rgba(255,255,255,0.2)'
+                                }}>
+                                    <div className="icon-bx mb-2" style={{
+                                        width: '40px',
+                                        height: '40px',
+                                        backgroundColor: 'rgba(255,255,255,0.2)',
+                                        borderRadius: '50%',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        fontSize: '16px'
+                                    }}>
+                                        <i className="fa fa-home"></i>
+                                    </div>
+                                    <h6 className="text-white mb-1" style={{ fontSize: '0.9rem' }}>From Your Home</h6>
+                                    <p className="text-white-50 mb-0" style={{ fontSize: '0.75rem' }}>No travel required - healthcare at your doorstep</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="consultation-hours mt-3" style={{
+                            backgroundColor: 'rgba(255,255,255,0.15)',
+                            padding: '15px',
+                            borderRadius: '8px',
+                            textAlign: 'center'
+                        }}>
+                            <h6 className="text-white mb-1" style={{ fontSize: '0.85rem' }}>Available Hours</h6>
+                            <p className="text-white-50 mb-0" style={{ fontSize: '0.75rem' }}>Monday - Friday: 9:00 AM - 6:00 PM<br/>Saturday: 9:00 AM - 4:00 PM</p>
                         </div>
                     </div>
                 </div>

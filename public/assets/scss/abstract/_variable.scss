@@ -13,19 +13,19 @@ $ignore-warning             : true;
 }
 
 // Color
-$primary   : #00BDE0;
-$secondary : #031B4E !default;
+$primary   : #4F46E5; // Indigo
+$secondary : #6366F1; // Pale indigo
 $success   : #31A56D !default;
 $info      : #0194D9 !default;
 $warning   : #E79600 !default;
 $danger    : #D23636 !default;
-$light     : #ECF5FB !default;
+$light     : #F3F4F6; // Lavender haze
 $dark      : #444444 !default;
 $black	   : #000000;
 
 // Body
 $body-bg   : #ffffff;
-$body-color: #566593;
+$body-color: #374151;
 
 // Typography
 $font-family-base : 'Poppins', sans-serif;
@@ -52,7 +52,7 @@ $heading-primary-size: 1.8rem;
 $sub-heading-size    : 1.6rem !default;
 $grid-gutter-width   : 30px;
 $dropdown-lik-color  : $body-color;
-$border-color        : #E1EBF1;
+$border-color        : #E5E7EB;
 $headings-color      : $secondary !default;
 
 $grid-gutter-width: 20px;
@@ -96,7 +96,14 @@ $green   : #2E8278;
 $blue    : #131045;
 $sea	 : #1E33E5;
 $rama	 : #61C3E2;
-$glight	 : #E5CCB8;	
+$glight	 : #E5CCB8;
+
+// Indigo Theme Colors
+$indigo  : #4F46E5;
+$pale-indigo : #6366F1;
+$lavender-haze : #F3F4F6;
+$misty-violet : #8B5CF6;
+$light-indigo : #A5B4FC;	
 
 // Color Opacity
 $primary-light: rgba($primary,0.1);
@@ -211,8 +218,8 @@ $white: #ffffff;
 	--radius-sm: 10px;
 	--radius: 6px;
 
-	--gradient: linear-gradient( to right, rgb(255,64,62) 0%, rgb(255,129,27) 100%);
-	--gradient-sec: linear-gradient( to right, rgb(57,26,166) 0%, rgb(6,163,245) 100%);
+	--gradient: linear-gradient( to right, rgb(79,70,229) 0%, rgb(139,92,246) 100%);
+	--gradient-sec: linear-gradient( to right, rgb(99,102,241) 0%, rgb(165,180,252) 100%);
 	
 	--primary-hover: #{lighten($primary, 10)};
 	--font-family-base: #{$font-family-base};
