@@ -271,7 +271,7 @@ function TeamDetail() {
                         Book Online
                       </span>
                       <h3 className="fw-semibold mb-3 text-dark">
-                        Schedule with Dr Huma
+                        Schedule with Dr Samira
                       </h3>
                       <p className="mb-4 text-body">
                         Reserve your consultation in minutes via our secure
