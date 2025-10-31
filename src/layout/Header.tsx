@@ -83,7 +83,7 @@ function Header({ columnstand } : Props) {
                             <div onClick={() => setShow(false)} className="menu-close fade-overlay"></div>
                             <div className={`header-nav w3menu w3menu-end mo-left ${show ? 'show' : ''}`} id="W3Menu">
                                 <div className="logo-header logo-dark">
-                                    <Link href="/"><Image src={IMAGES.logo} alt="logo" /></Link>
+                                    <Link href="/"><Image src={IMAGES.yourdoctorlogo} alt="logo" /></Link>
                                 </div>
                                 <ul className="nav navbar-nav">
                                     {menudata.map((data: MenuItem, i : number) => {
