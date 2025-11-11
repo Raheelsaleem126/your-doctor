@@ -67,10 +67,10 @@ export const menudata : MenuItem[] =[
         title: "Contact Us", 
         to: "/contact-us" 
     },
-    {
-        title: "FAQs",
-        to: "/faqs",
-    },
+    // {
+    //     title: "FAQs",
+    //     to: "/faqs",
+    // },
 ]
 
 // clientswiper  

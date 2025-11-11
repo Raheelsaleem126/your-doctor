@@ -94,6 +94,54 @@ const services = [
     image: IMAGES.birthcontrol,
     right: false,
   },
+  {
+    title: "Elderly Care",
+    description:
+      "Holistic and compassionate support for older adults. We provide routine checkups, chronic disease management, fall risk assessment, and guidance for families caring for elderly loved ones.",
+    listTitle: "What we offer:",
+    items: [
+      "Routine health assessments",
+      "Chronic disease management",
+      "Medication reviews",
+      "Fall and frailty assessments",
+      "Support for carers",
+    ],
+    cta: { label: "Book Elderly Care Appointment", href: "/appointment" },
+    image: IMAGES.diabetescare, // Placeholder image
+    right: true,
+  },
+  {
+    title: "Menopause Management",
+    description:
+      "Expert support at every stage: symptom relief, HRT options, lifestyle advice, and confidential, tailored menopausal care for women.",
+    listTitle: "What we offer:",
+    items: [
+      "Symptom assessment & advice",
+      "Hormone Replacement Therapy (HRT)",
+      "Lifestyle and nutrition support",
+      "Bone health checks",
+      "Emotional wellbeing advice",
+    ],
+    cta: { label: "Book Menopause Consultation", href: "/appointment" },
+    image: IMAGES.skinconcern, // Placeholder image
+    right: false,
+  },
+  {
+    title: "Behavioral Problems",
+    description:
+      "Supportive assessment and management for children and adults experiencing behavioral or emotional challenges, with onward referral if specialist help is needed.",
+    listTitle: "We can help with:",
+    items: [
+      "Sleep difficulties",
+      "ADHD initial assessment",
+      "Low mood or anxiety",
+      "Emotional regulation issues",
+      "Guidance for parents or carers",
+    ],
+    cta: { label: "Book a Behavioral Health Review", href: "/appointment" },
+    image: IMAGES.obesity, // Placeholder image
+    right: true,
+  },
 ];
 
 function Services() {

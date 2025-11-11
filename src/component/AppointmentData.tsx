@@ -150,6 +150,9 @@ function AppointmentData() {
                             <Dropdown.Item onClick={() => setSelectCat("Diabetes Care")}>Diabetes Care</Dropdown.Item>
                             <Dropdown.Item onClick={() => setSelectCat("Obesity & Weight Management")}>Obesity & Weight Management</Dropdown.Item>
                             <Dropdown.Item onClick={() => setSelectCat("Birth Control & Sexual Health")}>Birth Control & Sexual Health</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectCat("Elderly Care")}>Elderly Care</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectCat("Menopause Management")}>Menopause Management</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectCat("Behavioral Problems")}>Behavioral Problems</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
                       </div>
